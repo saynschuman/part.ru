@@ -6534,3 +6534,38 @@ header.header {
       .auto-parts .small .log img:hover {
         -webkit-box-shadow: none;
                 box-shadow: none; }
+
+.goods {
+  padding-top: 60px; }
+  .goods h2 {
+    text-align: center; }
+  .goods .good {
+    width: 100%;
+    margin-bottom: 16px;
+    background-size: cover;
+    position: relative; }
+    .goods .good .info {
+      font-family: 'Lato-Light';
+      font-size: 25px;
+      position: absolute;
+      bottom: 25px;
+      left: 24px;
+      color: #201f21; }
+      .goods .good .info a {
+        font-size: 15px;
+        color: #9f9b9b;
+        text-decoration: none;
+        display: block; }
+        .goods .good .info a:hover {
+          color: #000; }
+        .goods .good .info a::after {
+          content: '\f178';
+          color: #dcdcdd;
+          font-family: FontAwesome;
+          padding-left: 8px; }
+  .goods .big {
+    height: 512px; }
+  .goods .medium {
+    height: 336px; }
+  .goods .small {
+    height: 160px; }
