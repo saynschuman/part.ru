@@ -6402,6 +6402,8 @@ header.header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
+    .slider .item:focus {
+      outline: none; }
     .slider .item .text {
       font-weight: 100;
       font-family: 'Lato-Light';
@@ -6487,10 +6489,18 @@ header.header {
 
 .auto-parts {
   padding-top: 16px; }
+  .auto-parts .col-md-1 {
+    padding: 0; }
   .auto-parts h2 {
     text-align: center; }
   .auto-parts img {
     display: block;
     margin: 0 auto;
     padding-top: 23px;
-    padding-bottom: 18px; }
+    padding-bottom: 18px;
+    padding-left: 8px;
+    padding-right: 7px;
+    cursor: pointer; }
+    .auto-parts img:hover {
+      -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1); }
