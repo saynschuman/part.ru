@@ -483,17 +483,19 @@ header.header {
 
 .slider {
 	position: relative;
+	border-bottom: 1px solid #eae3e4;
 	.item {
 		height: 520px;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 100%;   
+		background-size: cover;   
 		.text {
 			font-weight: 100;
 			font-family: 'Lato-Light';
 			color: #333;
 			font-size: 45px;
 			margin-top: 117px;
+			line-height: 52px;
 			span {
 				color: $activeRed;
 				font-family: 'Lato-Bold';
@@ -509,10 +511,10 @@ header.header {
 				font-family: 'Lato-Bold';
 				text-transform: uppercase;
 				letter-spacing: 1px;
-				padding: 15px 0;
+				padding: 0;
 				text-decoration: none;
 				border-radius: 4px;
-				margin-top: 10px;
+				margin-top: 15px;
 				&:hover {
 					background: $activeRed;
 					color: #fff;
@@ -553,7 +555,7 @@ header.header {
 	}
 	.slick-dots {
 		text-align: center;
-		bottom: 15px;
+		bottom: 0px;
 		position: absolute;
 		width: 100%;
 		li {
@@ -575,5 +577,18 @@ header.header {
 				width: 8px;
 			}
 		}
+	}
+}
+
+.auto-parts {
+	padding-top: 16px;
+	h2 {
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 23px;
+		padding-bottom: 18px;
 	}
 }

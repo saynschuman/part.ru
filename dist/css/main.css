@@ -5969,6 +5969,26 @@ a {
     -webkit-transition: .3s;
     transition: .3s; }
 
+h1 {
+  font-family: 'Lato-Bold';
+  font-style: 48px;
+  line-height: 52px; }
+
+h2 {
+  font-family: 'Lato-Light';
+  font-size: 37px;
+  line-height: 52px; }
+
+h3 {
+  font-family: 'Lato-Light';
+  font-style: 36px;
+  line-height: 40px; }
+
+h4 {
+  font-family: 'Lato-Light';
+  font-style: 24px;
+  line-height: 28px; }
+
 header.header {
   font-family: 'lato'; }
   header.header .top-header {
@@ -6375,18 +6395,20 @@ header.header {
         background: #c8d7e2; }
 
 .slider {
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid #eae3e4; }
   .slider .item {
     height: 520px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%; }
+    background-size: cover; }
     .slider .item .text {
       font-weight: 100;
       font-family: 'Lato-Light';
       color: #333;
       font-size: 45px;
-      margin-top: 117px; }
+      margin-top: 117px;
+      line-height: 52px; }
       .slider .item .text span {
         color: #d11f3a;
         font-family: 'Lato-Bold';
@@ -6401,11 +6423,11 @@ header.header {
         font-family: 'Lato-Bold';
         text-transform: uppercase;
         letter-spacing: 1px;
-        padding: 15px 0;
+        padding: 0;
         text-decoration: none;
         -webkit-border-radius: 4px;
                 border-radius: 4px;
-        margin-top: 10px; }
+        margin-top: 15px; }
         .slider .item .text a:hover {
           background: #d11f3a;
           color: #fff; }
@@ -6444,7 +6466,7 @@ header.header {
               transform: rotate(0); }
   .slider .slick-dots {
     text-align: center;
-    bottom: 15px;
+    bottom: 0px;
     position: absolute;
     width: 100%; }
     .slider .slick-dots li {
@@ -6462,3 +6484,13 @@ header.header {
                 border-radius: 100%;
         height: 12px;
         width: 8px; }
+
+.auto-parts {
+  padding-top: 16px; }
+  .auto-parts h2 {
+    text-align: center; }
+  .auto-parts img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-bottom: 18px; }
