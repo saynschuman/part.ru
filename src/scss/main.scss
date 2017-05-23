@@ -599,8 +599,39 @@ header.header {
 		padding-left: 8px;
     	padding-right: 7px;
     	cursor: pointer;
+    	border: 1px solid #fff;
+    	border-radius: 5px; 
 		&:hover {
 			box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+			border: 1px solid #e9e5e6;
+		}
+	}
+	.small {
+		.log {
+			padding: 0;
+			border-radius: 3px;
+			border: 1px solid #fff;
+			&:hover {
+				box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+				border: 1px solid #e9e5e6;
+				img {
+					filter: grayscale(0);
+    				opacity: 1;
+				}
+			}
+			img {
+				padding-left: 8px;
+    			padding-right: 7px;
+    			margin-left: 0;
+    			padding-top: 10px;
+    			padding-bottom: 10px;
+    			border: none;
+    			filter: grayscale(100%);
+    			opacity: .6;
+    			&:hover {
+					box-shadow: none;
+				}
+			}
 		}
 	}
 }
