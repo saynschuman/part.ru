@@ -740,13 +740,11 @@ header.header {
 		text-align: center;
 	}
 	.col-md-3 {
-		box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
+		// box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
+		box-shadow: 0px 1px 26px -4px rgba(212, 204, 205, 0.45);
 	}
 	.promotion {
 		background: #fff;
-	}
-	.promotion-text {
-		padding: 17px;
 	}
 	.promotion-image {
 		height: 160px;
@@ -779,21 +777,26 @@ header.header {
 		font-size: 20px;
 		line-height: 1.2;
 		margin-bottom: 29px;
+		padding: 17px;
+		padding-bottom: 0;
 		display: block;
 		text-decoration: none;
-		min-height: 73px;
+		min-height: 90px;
 		&:focus {
 			outline: none;
 		}
 	}
 	.promotion-info {
 		position: relative;
-		padding-left: 30px;
+		padding-left: 47px;
+		background-color: #f9fafb; 
+		padding-bottom: 17px;
+		padding-top: 14px;
 		&::before {
 			content: '';
 			position: absolute;
-			left: 0;
-			top: 6px;
+			left: 17px;
+			top: 20px;
 			height: 24px;
 			width: 24px;
 			background-image: url(../img/elips-1.png); 
