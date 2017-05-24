@@ -811,7 +811,7 @@ header.header {
 	}
 	.slick-dots {
 		text-align: center;
-		bottom: -60px;
+		bottom: -37px;
 		position: absolute;
 		width: 100%;
 		li {
@@ -835,8 +835,105 @@ header.header {
 		}
 	}	
 	.slick-slide {
+		margin-bottom: 24px;
 		&:focus {
 			outline: none;
 		}
 	}
+}
+
+.news {
+	font-family: "lato";
+	h2 {
+		text-align: center;
+	}
+	.new-image {
+		height: 72px;
+		width: 100%;
+		background-size: cover;
+		margin-bottom: 16px; 
+	}
+	.new {
+		height: 72px;
+		margin-bottom: 16px; 
+		overflow: hidden;
+	}
+	.big-block {
+		height: 336px;
+		width: 100%;
+		color: #fff;
+		transition: .8s;
+		background-size: 100%;
+		// background-position: center center; 
+		// &:hover {
+		// 	background-size: 130%;
+		// 	transition: .8s; 
+		// }
+	}
+	.big-block {
+		position: relative;
+	}
+	.big-block-inner {
+		position: absolute;
+		bottom: 19px;
+		left: 24px;
+		right: 24px;
+	}
+	.time {
+		font-family: 'Lato-Light';
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	.big-title {
+		margin-bottom: 26px;
+		font-size: 23px;
+	}
+	.big-more {
+		color: #eae3e4;
+		text-decoration: none;
+		font-family: 'Lato-Light';
+		&:hover {
+			color: #fff;
+		}
+		&::after {
+		    content: '\f178';
+			color: #eae3e4;
+			font-family: FontAwesome;
+			padding-left: 8px;
+		}
+	}
+	.news-block {
+		margin-top: -4px;
+		margin-bottom: 36px;
+		&:hover {
+			.news-title {
+				color: #4f9ed2;
+				text-decoration: underline;
+			}
+			.news-time {
+				color: $activeBlue;
+			}
+		}
+		.news-time {
+			color: #a5a1a1;
+			font-size: 10px;
+		}
+		.news-title {
+			color: $activeBlue;
+			text-decoration: none;
+		}
+	}
+	.new {
+		color: $activeBlue;
+		display: block;
+		text-decoration: none;
+		&:hover {
+			color: #d55853;
+		}
+	}
+	.new-time {
+		font-size: 10px;
+		margin-bottom: 3px;
+		text-transform: uppercase;
+	}	
 }

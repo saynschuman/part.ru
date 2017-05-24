@@ -6683,7 +6683,7 @@ header.header {
       font-family: 'Lato-Medium'; }
   .promotions .slick-dots {
     text-align: center;
-    bottom: -60px;
+    bottom: -37px;
     position: absolute;
     width: 100%; }
     .promotions .slick-dots li {
@@ -6701,5 +6701,77 @@ header.header {
                 border-radius: 100%;
         height: 12px;
         width: 8px; }
-  .promotions .slick-slide:focus {
-    outline: none; }
+  .promotions .slick-slide {
+    margin-bottom: 24px; }
+    .promotions .slick-slide:focus {
+      outline: none; }
+
+.news {
+  font-family: "lato"; }
+  .news h2 {
+    text-align: center; }
+  .news .new-image {
+    height: 72px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 16px; }
+  .news .new {
+    height: 72px;
+    margin-bottom: 16px;
+    overflow: hidden; }
+  .news .big-block {
+    height: 336px;
+    width: 100%;
+    color: #fff;
+    -webkit-transition: .8s;
+    transition: .8s;
+    background-size: 100%; }
+  .news .big-block {
+    position: relative; }
+  .news .big-block-inner {
+    position: absolute;
+    bottom: 19px;
+    left: 24px;
+    right: 24px; }
+  .news .time {
+    font-family: 'Lato-Light';
+    font-size: 10px;
+    text-transform: uppercase; }
+  .news .big-title {
+    margin-bottom: 26px;
+    font-size: 23px; }
+  .news .big-more {
+    color: #eae3e4;
+    text-decoration: none;
+    font-family: 'Lato-Light'; }
+    .news .big-more:hover {
+      color: #fff; }
+    .news .big-more::after {
+      content: '\f178';
+      color: #eae3e4;
+      font-family: FontAwesome;
+      padding-left: 8px; }
+  .news .news-block {
+    margin-top: -4px;
+    margin-bottom: 36px; }
+    .news .news-block:hover .news-title {
+      color: #4f9ed2;
+      text-decoration: underline; }
+    .news .news-block:hover .news-time {
+      color: #0a2a3d; }
+    .news .news-block .news-time {
+      color: #a5a1a1;
+      font-size: 10px; }
+    .news .news-block .news-title {
+      color: #0a2a3d;
+      text-decoration: none; }
+  .news .new {
+    color: #0a2a3d;
+    display: block;
+    text-decoration: none; }
+    .news .new:hover {
+      color: #d55853; }
+  .news .new-time {
+    font-size: 10px;
+    margin-bottom: 3px;
+    text-transform: uppercase; }
