@@ -6539,33 +6539,78 @@ header.header {
   padding-top: 60px; }
   .goods h2 {
     text-align: center; }
-  .goods .good {
-    width: 100%;
-    margin-bottom: 16px;
-    background-size: cover;
-    position: relative; }
-    .goods .good .info {
-      font-family: 'Lato-Light';
-      font-size: 25px;
-      position: absolute;
-      bottom: 25px;
-      left: 24px;
-      color: #201f21; }
-      .goods .good .info a {
-        font-size: 15px;
-        color: #9f9b9b;
-        text-decoration: none;
-        display: block; }
-        .goods .good .info a:hover {
-          color: #000; }
-        .goods .good .info a::after {
-          content: '\f178';
-          color: #dcdcdd;
-          font-family: FontAwesome;
-          padding-left: 8px; }
-  .goods .big {
-    height: 512px; }
-  .goods .medium {
-    height: 336px; }
-  .goods .small {
-    height: 160px; }
+
+.good {
+  width: 100%;
+  margin-bottom: 16px;
+  background-size: cover;
+  position: relative; }
+  .good .info {
+    font-family: 'Lato-Light';
+    font-size: 25px;
+    position: absolute;
+    bottom: 25px;
+    left: 24px;
+    color: #201f21; }
+    .good .info a {
+      font-size: 15px;
+      color: #9f9b9b;
+      text-decoration: none;
+      display: block; }
+      .good .info a:hover {
+        color: #000; }
+      .good .info a::after {
+        content: '\f178';
+        color: #dcdcdd;
+        font-family: FontAwesome;
+        padding-left: 8px; }
+
+.big {
+  height: 512px; }
+
+.medium {
+  height: 336px; }
+
+.small {
+  height: 160px; }
+
+.companies h2 {
+  text-align: center; }
+
+.companies .good {
+  position: relative; }
+  .companies .good:hover {
+    -webkit-box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75);
+            box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75); }
+    .companies .good:hover .corner {
+      background-image: url(../img/red-corner.png); }
+    .companies .good:hover img {
+      -webkit-filter: invert(100%);
+              filter: invert(100%); }
+
+.companies .info {
+  color: #0a2a3d;
+  bottom: 15px; }
+  .companies .info a {
+    color: #a5a1a1; }
+    .companies .info a::after {
+      height: 100%;
+      width: 100%; }
+
+.companies .quantity {
+  font-family: 'Lato-Medium' !important;
+  font-size: 14px !important; }
+
+.companies .corner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: none;
+  height: 128px;
+  width: 181px;
+  background-size: 100%; }
+  .companies .corner img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-right: 14px; }
