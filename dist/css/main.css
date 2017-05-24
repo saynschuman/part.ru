@@ -6778,3 +6778,23 @@ header.header {
     font-size: 10px;
     margin-bottom: 3px;
     text-transform: uppercase; }
+
+.raiting h2 {
+  text-align: center; }
+
+.raiting .line .inl {
+  display: inline-block;
+  float: left; }
+
+.raiting .line .stars {
+  padding: 0;
+  margin: 0; }
+  .raiting .line .stars li {
+    display: inline-block;
+    height: 11px;
+    width: 12px;
+    background-image: url(../img/stars.png); }
+    .raiting .line .stars li.red {
+      background-position: 0 0; }
+    .raiting .line .stars li.pink {
+      background-position: 12px 0; }

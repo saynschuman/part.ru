@@ -940,3 +940,42 @@ header.header {
 		text-transform: uppercase;
 	}	
 }
+
+.raiting {
+	h2 {
+		text-align: center;
+	}
+	.raiting-col-title {
+	}
+	.line {
+		.inl {
+			display: inline-block;
+			float: left;
+		}
+		.number {
+
+		}
+		.name {
+
+		}
+		.stars {
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				height: 11px;
+				width: 12px;
+				background-image: url(../img/stars.png);
+				&.red {
+					background-position: 0 0; 
+				}
+				&.pink {
+					background-position: 12px 0;
+				}
+			}
+		}
+		.rate {
+
+		}
+	}
+}
