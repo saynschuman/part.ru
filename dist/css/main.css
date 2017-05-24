@@ -6574,43 +6574,132 @@ header.header {
 .small {
   height: 160px; }
 
-.companies h2 {
-  text-align: center; }
+.companies {
+  padding-bottom: 16px; }
+  .companies h2 {
+    text-align: center; }
+  .companies .good {
+    position: relative;
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
+            box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45); }
+    .companies .good:hover {
+      -webkit-box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75);
+              box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75); }
+      .companies .good:hover .corner {
+        background-image: url(../img/red-corner.png); }
+      .companies .good:hover img {
+        -webkit-filter: invert(100%);
+                filter: invert(100%); }
+  .companies .info {
+    color: #0a2a3d;
+    bottom: 15px; }
+    .companies .info a {
+      color: #a5a1a1; }
+      .companies .info a::after {
+        height: 100%;
+        width: 100%; }
+  .companies .quantity {
+    font-family: 'Lato-Medium' !important;
+    font-size: 14px !important; }
+  .companies .corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: none;
+    height: 128px;
+    width: 181px;
+    background-size: 100%; }
+    .companies .corner img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 12px;
+      margin-right: 14px; }
 
-.companies .good {
-  position: relative; }
-  .companies .good:hover {
-    -webkit-box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75);
-            box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75); }
-    .companies .good:hover .corner {
-      background-image: url(../img/red-corner.png); }
-    .companies .good:hover img {
-      -webkit-filter: invert(100%);
-              filter: invert(100%); }
-
-.companies .info {
-  color: #0a2a3d;
-  bottom: 15px; }
-  .companies .info a {
-    color: #a5a1a1; }
-    .companies .info a::after {
-      height: 100%;
-      width: 100%; }
-
-.companies .quantity {
-  font-family: 'Lato-Medium' !important;
-  font-size: 14px !important; }
-
-.companies .corner {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-image: none;
-  height: 128px;
-  width: 181px;
-  background-size: 100%; }
-  .companies .corner img {
+.promotions {
+  background: #f7f8fa;
+  padding-bottom: 45px; }
+  .promotions h2 {
+    text-align: center; }
+  .promotions .col-md-3 {
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
+            box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45); }
+  .promotions .promotion {
+    background: #fff; }
+  .promotions .promotion-text {
+    padding: 17px; }
+  .promotions .promotion-image {
+    height: 160px;
+    width: 100%;
+    background-size: cover; }
+    .promotions .promotion-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 7px;
+      border: 30px solid transparent;
+      border-top: 30px solid #d11f3a;
+      border-right: 30px solid #d11f3a; }
+    .promotions .promotion-image::before {
+      content: attr(data-discount);
+      position: absolute;
+      right: 12px;
+      top: 9px;
+      color: #fff;
+      font-size: 15px;
+      font-family: 'Lato-Light';
+      z-index: 1;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+  .promotions .promotion-title {
+    color: #0a2a3d;
+    font-family: 'Lato-Medium';
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 29px;
     display: block;
-    margin: 0 auto;
-    margin-top: 12px;
-    margin-right: 14px; }
+    text-decoration: none;
+    min-height: 73px; }
+    .promotions .promotion-title:focus {
+      outline: none; }
+  .promotions .promotion-info {
+    position: relative;
+    padding-left: 30px; }
+    .promotions .promotion-info::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      height: 24px;
+      width: 24px;
+      background-image: url(../img/elips-1.png); }
+    .promotions .promotion-info .company-name {
+      color: #0a2a3d; }
+    .promotions .promotion-info .ocupation {
+      text-transform: uppercase;
+      color: #9f9b9b;
+      font-size: 11px;
+      margin-top: 2px;
+      font-family: 'Lato-Medium'; }
+  .promotions .slick-dots {
+    text-align: center;
+    bottom: -60px;
+    position: absolute;
+    width: 100%; }
+    .promotions .slick-dots li {
+      display: inline-block;
+      list-style: none;
+      padding: 0 6px; }
+      .promotions .slick-dots li.slick-active button {
+        background: #d11f3a; }
+      .promotions .slick-dots li button {
+        color: transparent;
+        border: none;
+        background: none;
+        background: #eae3e4;
+        -webkit-border-radius: 100%;
+                border-radius: 100%;
+        height: 12px;
+        width: 8px; }
+  .promotions .slick-slide:focus {
+    outline: none; }

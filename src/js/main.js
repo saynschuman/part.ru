@@ -25,5 +25,12 @@
 	  	prevArrow: '<div class="prev"></div>',
 		nextArrow: '<div class="next"></div>'
 	})
+	
+	$('.pr-slider').slick({
+		arrows: false,
+		slidesToShow: 4,
+		slidesToScroll: 3,
+		dots: true
+	});
 
 })(jQuery);

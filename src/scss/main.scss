@@ -683,11 +683,13 @@ header.header {
 }
 
 .companies {
+	padding-bottom: 16px;
 	h2 {
 		text-align: center;
 	}
 	.good {
 		position: relative;
+		box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
 		&:hover {
 			box-shadow: 0px 1px 25px 0px rgba(159, 155, 155, 0.75);
 			.corner {
@@ -727,6 +729,114 @@ header.header {
 			margin: 0 auto;
 			margin-top: 12px;
 			margin-right: 14px;
+		}
+	}
+}
+
+.promotions {
+	background: #f7f8fa;
+	padding-bottom: 45px;
+	h2 {
+		text-align: center;
+	}
+	.col-md-3 {
+		box-shadow: 0px 1px 15px 0px rgba(212, 204, 205, 0.45);
+	}
+	.promotion {
+		background: #fff;
+	}
+	.promotion-text {
+		padding: 17px;
+	}
+	.promotion-image {
+		height: 160px;
+		width: 100%;
+		background-size: cover; 
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 7px;
+			border: 30px solid transparent;	
+			border-top: 30px solid #d11f3a; 
+			border-right: 30px solid #d11f3a;
+		}
+		&::before {
+			content: attr(data-discount);
+			position: absolute;
+		    right: 12px;
+		    top: 9px;
+			color: #fff;
+			font-size: 15px;
+			font-family: 'Lato-Light';
+			z-index: 1;
+			transform: rotate(45deg);
+		}
+	}
+	.promotion-title {
+		color: $activeBlue;
+		font-family: 'Lato-Medium';
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 29px;
+		display: block;
+		text-decoration: none;
+		min-height: 73px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.promotion-info {
+		position: relative;
+		padding-left: 30px;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 6px;
+			height: 24px;
+			width: 24px;
+			background-image: url(../img/elips-1.png); 
+		}
+		.company-name {
+			color: $activeBlue;
+		}
+		.ocupation {
+			text-transform: uppercase;
+			color: #9f9b9b;
+			font-size: 11px;
+			margin-top: 2px;
+			font-family: 'Lato-Medium';
+		}
+	}
+	.slick-dots {
+		text-align: center;
+		bottom: -60px;
+		position: absolute;
+		width: 100%;
+		li {
+			display: inline-block;
+			list-style: none;
+			padding: 0 6px;
+			&.slick-active {
+				button {
+					background: $activeRed;
+				}
+			}
+			button {
+				color: transparent;
+				border: none;
+				background: none;
+				background: #eae3e4;
+				border-radius: 100%;
+				height: 12px;
+				width: 8px;
+			}
+		}
+	}	
+	.slick-slide {
+		&:focus {
+			outline: none;
 		}
 	}
 }
