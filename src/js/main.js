@@ -33,4 +33,23 @@
 		dots: true
 	});
 
+	$('#category-search-button').click(function(e){
+		e.preventDefault();
+		$(this).addClass('btn-r');
+		$('#category-search-list').show();
+	})
+	$('#category-search-button').blur(function(){
+		setTimeout(function(){
+		  $('#category-search-list').hide();
+		}, 200);
+	})
+
+	$('#category-search-list li a').click(function(e){
+		e.preventDefault();
+	})
+	$('#category-search-list li ul li a').click(function(){
+		$('#input-search').val($(this).text());
+	})
+	
+
 })(jQuery);
