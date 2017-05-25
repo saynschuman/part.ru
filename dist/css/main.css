@@ -6368,14 +6368,23 @@ header.header {
 
 .recent-searches {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 20px; }
   .recent-searches li {
     list-style: none;
     padding: 15px 30px;
     display: inline-block;
     color: #9f9b9b;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-top: 0; }
+    .recent-searches li ul {
+      padding-left: 0; }
     .recent-searches li:first-child {
+      padding-right: 0; }
+    .recent-searches li:nth-child(2) {
       padding-left: 0; }
     .recent-searches li a {
       font-size: 14px;
