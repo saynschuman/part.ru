@@ -1474,12 +1474,12 @@ footer.footer {
 					text-transform: uppercase;
 					position: relative;
 					padding-right: 50px;
+					margin-right: 40px;
 					&.big-m {
 						width: auto;
 						padding-right: 32px !important;
 					}
-					&::after {
-						content: '';
+					.delete-tag {
 						background-image: url(../img/close.png);
 						height: 8px;
 						width: 9px;

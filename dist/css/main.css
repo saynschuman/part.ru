@@ -7211,12 +7211,12 @@ footer.footer {
                 border-radius: 5px;
         text-transform: uppercase;
         position: relative;
-        padding-right: 50px; }
+        padding-right: 50px;
+        margin-right: 40px; }
         .filter-container .filter-body .col:last-child .type-m.big-m {
           width: auto;
           padding-right: 32px !important; }
-        .filter-container .filter-body .col:last-child .type-m::after {
-          content: '';
+        .filter-container .filter-body .col:last-child .type-m .delete-tag {
           background-image: url(../img/close.png);
           height: 8px;
           width: 9px;

@@ -61,9 +61,8 @@
 		}, 100);
 		var tt = $(this).text();
 		$('#filter-choose-details').text(tt);
-		$('#add-after').append( "<span class='type-m'>" + tt + "</span><br>" );
+		$('#add-after').append( '<div class="type-m">' + tt + '<span class="delete-tag"></span><br></div>' );
 	})
-
 
 	$( '.type-m' ).on( 'click', function() {
 	    $( this ).remove();
@@ -75,19 +74,16 @@
 		$('.filter-container').show();
 	})
 
-	$(document).mouseup(function (e){ // событие клика по веб-документу
+	$(document).mouseup(function (e){ 
 		var div = $('.filter-container');
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-			div.hide(); // скрываем его
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+			div.hide(); 
 		}
-	});
+	});	
 
-	// $('#show-filter-button').blur(function(){
-	// 	setTimeout(function(){
-	// 	  $('.filter-container').hide();
-	// 	}, 200);
-	// })
-	
+    $( '.type-m-container' ).on( 'click', '.delete-tag', function() {
+        $( this ).parent().remove();
+    });
 
 })(jQuery);
