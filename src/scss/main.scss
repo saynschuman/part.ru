@@ -26,9 +26,9 @@ header.header {
 			&:focus {
 				transition: .3s;
 				outline: none;
-				& ~ .choose-cities {
-					display: block;
-				}
+				// & ~ .choose-cities {
+				// 	display: block;
+				// }
 				&::before {
 					color: #000;
 					transition: .3s;

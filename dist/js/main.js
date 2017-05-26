@@ -123,4 +123,14 @@
     	$('.logged-right-toggle').show();
     	$(this).addClass('box-sh');
     })
+
+    $('.location').click(function(){
+    	$('.choose-cities').show();	
+    })
+    $('.choose-cities li').click(function(){
+    	setTimeout(function(){
+		  $('.choose-cities').hide();
+		}, 200);
+    	$('.location').text($(this).text());
+    })
 })(jQuery);

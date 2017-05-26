@@ -6011,8 +6011,6 @@ header.header {
         -webkit-transition: .3s;
         transition: .3s;
         outline: none; }
-        header.header .top-header .location:focus ~ .choose-cities {
-          display: block; }
         header.header .top-header .location:focus::before {
           color: #000;
           -webkit-transition: .3s;
