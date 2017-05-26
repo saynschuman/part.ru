@@ -63,6 +63,15 @@
 		var tt = $(this).text();
 		$('#filter-choose-details').text(tt);
 		$('#add-after').append( '<div class="type-m">' + tt + '<span class="delete-tag"></span><br></div>' );
+		if ($('#add-after .type-m').length > 3 ) {
+			var l = $('#add-after .type-m').length - 3;
+			$('.more-container').html('<a href="" class="more">ещё (' + l +')</a>')
+			$('.more').click(function(e){
+				e.preventDefault();
+				$('.type-m-container').addClass('show-more-tags');
+				$(this).hide();
+			})			
+    	}
 	})
 
 	$( '.type-m' ).on( 'click', function() {
@@ -85,6 +94,14 @@
 
     $( '.type-m-container' ).on( 'click', '.delete-tag', function() {
         $( this ).parent().remove();
+        if ($('#add-after .type-m').length > 3 ) {
+			var l = $('#add-after .type-m').length - 3;
+			$('.more-container').html('<a href="" class="more">ещё (' + l +')</a>')
+    	}
+        if ($('#add-after .type-m').length <= 3 ) {
+			$('.more-container').html('')
+			
+    	}
     });
 
     $('#input-search').focus(function(){
@@ -95,9 +112,4 @@
 		  $('.autocomplete-block').hide();
 		}, 200);
     })
-
-    // $(window).on("load",function(){
-    //         $(".autocomplete-body").mCustomScrollbar();
-    //     });
-
 })(jQuery);

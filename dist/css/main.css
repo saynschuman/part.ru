@@ -7213,6 +7213,8 @@ footer.footer {
         position: relative;
         padding-right: 50px;
         margin-right: 40px; }
+        .filter-container .filter-body .col:last-child .type-m:nth-child(3) {
+          margin-bottom: 15px; }
         .filter-container .filter-body .col:last-child .type-m.big-m {
           width: auto;
           padding-right: 32px !important; }
@@ -7358,3 +7360,12 @@ footer.footer {
     .autocomplete-block .autocomplete-footer .all-c {
       color: #333;
       font-size: 12px; }
+
+.type-m-container {
+  height: auto;
+  max-height: 100px;
+  overflow: hidden; }
+
+.show-more-tags {
+  max-height: 100%;
+  overflow: visible; }
