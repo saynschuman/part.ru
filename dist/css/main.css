@@ -6385,10 +6385,10 @@ header.header {
     padding-top: 0; }
     .recent-searches li ul {
       padding-left: 0; }
+      .recent-searches li ul li:first-child {
+        padding-right: 30px; }
     .recent-searches li:first-child {
       padding-right: 0; }
-    .recent-searches li:nth-child(2) {
-      padding-left: 0; }
     .recent-searches li a {
       font-size: 14px;
       color: #4a799e;
