@@ -49,6 +49,7 @@
 	})
 	$('#category-search-list li ul li a').click(function(){
 		$('#input-search').val($(this).text());
+		$('#input-search').focus();
 	})
 	$('#filter-choose-details').click(function(e){
 		e.preventDefault();
@@ -85,5 +86,18 @@
     $( '.type-m-container' ).on( 'click', '.delete-tag', function() {
         $( this ).parent().remove();
     });
+
+    $('#input-search').focus(function(){
+    	$('.autocomplete-block').show();
+    })
+    $('#input-search').blur(function(){
+    	setTimeout(function(){
+		  $('.autocomplete-block').hide();
+		}, 200);
+    })
+
+    // $(window).on("load",function(){
+    //         $(".autocomplete-body").mCustomScrollbar();
+    //     });
 
 })(jQuery);
