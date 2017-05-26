@@ -1319,3 +1319,209 @@ footer.footer {
 		color: #fff !important;
 	} 
 }
+
+.btn-drk {
+	background-color: #a11c30 !important;
+	color: #fff !important;
+	box-shadow: none !important;
+	&::after {
+		background-color: #a11c30 !important;
+	} 
+	&::before {
+		color: #fff !important;
+	} 
+}
+
+.filter-container {
+	height: auto;
+	width: 520px;
+	position: absolute;
+	top: 47px;
+	right: 103px;
+	background-color: #fff;
+	z-index: 99;
+	display: none;
+	box-shadow: 0px 5px 30px 0px rgba(212, 204, 205, 0.8);
+	.filter-header {
+		background-color: #f7f8fa;
+		color: #9f9b9b;
+		font-size: 14px;
+		padding: 16px;
+		span {
+			color: #4a799e;
+			position: relative;
+			padding: 0 2px;
+			cursor: pointer;
+			margin-right: 10px;
+			&:first-child {
+				margin-left: 30px;
+			}
+			&:hover {
+				&::after {
+					opacity: 0;
+					transition: .1s;
+				}
+			}
+			&::after {
+				content: '';
+				transition: .1s;
+				opacity: 1;
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background-color: #4a799e;
+			}
+		}
+	}
+	.filter-body {
+		.col {
+			float: left;
+			height: auto;
+			padding: 16px;
+			text-align: center;
+			.pr {
+				color: #9f9b9b;
+				font-size: 14px;
+				text-align: left;
+				display: block;
+				width: 100%;
+				text-transform: none;
+				margin-bottom: 12px;
+			}
+			label {
+					display: block;
+					font-size: 11px;
+					text-transform: uppercase;
+					color: #0a2a3d;
+					border: 1px solid #eae3e4;
+					border-radius: 3px;
+					padding: 5px 0;
+					cursor: pointer;
+					transition: .3s;
+					&:hover {
+						border: 1px solid #d11f3a;
+						transition: .3s;
+						color: #d11f3a;
+					}
+				}
+			input {
+				display: none;
+				&:checked + label {
+					background-color: #d11f3a;
+					border: 1px solid #d11f3a;
+					color: #fff;
+				}
+			}			
+			&:first-child {
+				width: 120px;
+				border-right: 1px solid #e0e0e0;
+			}
+			&:nth-child(2) {
+				width: 120px;
+				border-right: 1px solid #e0e0e0;
+				label {
+					text-transform: none;
+				}
+			}
+			&:last-child {
+				width: calc(100% - 240px);
+				text-align: left;
+				position: relative;
+				.title {
+					font-size: 14px;
+					color: #9f9b9b;
+					span {
+						color: #0a2a3d;
+					}
+				}
+				button {
+					border-style: solid;
+					border-width: 1px;
+					border-color: rgb(212, 204, 205);
+					border-radius: 4px;
+					background-color: rgb(255, 255, 255);
+					box-shadow: inset 0px 2px 5px 0px rgba(0, 1, 2, 0.25);
+					padding: 5px 17px; 
+					color: #201f21;
+					font-size: 14px;
+					margin-top: 15px;
+					margin-bottom: 8px;
+					display: block;
+					width: 100%;
+					text-align: left;
+					position: relative;
+					&::after {
+						content: "\f0d7";
+						position: absolute;
+						right: 11px;
+						top: 6px;
+						color: #d4cccd;
+						font-family: FontAwesome;
+					}
+				}
+				.type-m {
+					display: inline-block;
+					margin-bottom: 8px;
+					padding: 5px 11px;
+					color: #fff;
+					width: auto;
+					background-color: #ff9a9a;
+					font-family: 'Lato-Bold';
+					font-size: 11px;
+					border-radius: 5px;
+					text-transform: uppercase;
+					position: relative;
+					padding-right: 50px;
+					&.big-m {
+						width: auto;
+						padding-right: 32px !important;
+					}
+					&::after {
+						content: '';
+						background-image: url(../img/close.png);
+						height: 8px;
+						width: 9px;
+						right: 7px;
+						top: 8px;
+						position: absolute;
+						z-index: 9;
+						cursor: pointer;
+					}
+				}
+				.more {
+					font-size: 10px;
+					color: #0a2a3d;
+					text-transform: uppercase;
+					text-align: center;
+					display: block;
+					background-color: #f7f8fa;
+					padding: 2px;
+					font-family: 'Lato-Bold';
+					text-decoration: none;				
+				}
+				ul {
+					padding: 10px 0;
+					box-shadow: 0px 5px 30px 0px rgba(212, 204, 205, 0.8);
+					border-top: none;
+				    position: absolute;
+					z-index: 99;
+					background: #fff;
+					margin-top: -5px;
+					width: calc(100% - 32px);
+					right: 16px;
+					display: none;
+					li {
+						list-style: none;
+						padding: 4px 17px;
+						cursor: pointer;
+						&:hover {
+							background-color: #f7f8fa;
+						}
+					}
+				}
+			}
+		}
+	}
+}

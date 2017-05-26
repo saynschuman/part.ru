@@ -117,7 +117,56 @@
 					</li>
 				</ul>
 			<input type="text" id="input-search" class="search" placeholder="Введитер детали, Vin номер, бренд товара  магазин или автосервис">
-			<button class="filter">...</button>
+			<button id="show-filter-button" class="filter">...</button>
+			<div class="filter-container">
+				<div class="filter-header">
+					Фильтр: <span>BMW x5</span>
+				</div>
+				<div class="filter-body">
+					<div class="col">
+						<span class="pr">Время</span>
+						<input name="dates" id="all" type="radio">
+						<label for="all">все</label>
+						<input name="dates" id="today" type="radio">
+						<label for="today">сегодня</label>
+						<input name="dates" id="yesterday" type="radio">
+						<label for="yesterday">вчера</label>
+						<input name="dates" id="weak" type="radio">
+						<label for="weak">неделя</label>
+						<input name="dates" id="month" type="radio">
+						<label for="month">месяц</label>
+					</div>
+					<div class="col">
+					<span class="pr">Цена</span>
+						<input name="price" id="5000" type="radio">
+						<label for="5000">до 5000 Р</label>
+						<input name="price" id="25000" type="radio">
+						<label for="25000">до 25000 Р</label>
+						<input name="price" id="50000" type="radio">
+						<label for="50000">до 50000 Р</label>
+						<input name="price" id="150000" type="radio">
+						<label for="150000">до 150000 Р</label>
+						<input name="price" id="250000" type="radio">
+						<label for="250000">до 250000 Р</label>
+					</div>
+					<div class="col">
+						<div class="title">Категория: <span>Автозапчасти</span></div>
+						<button id="filter-choose-details" >Выберите тип автозапчасти</button>
+						<ul id="filter-details-list">
+							<li class="detail">Мотор</li>
+							<li class="detail">Мощный карбюратор</li>
+							<li class="detail">Ротор</li>
+						</ul>
+						<div class="type-m-container">
+						<span id="add-after"></span>
+							<!-- <span class="type-m">Мотор</span><br>
+							<span class="type-m big-m">мощный карбюратор</span><br>
+							<span class="type-m">Ротор</span><br> -->
+						</div>
+						<!-- <a href="" class="more">ещё (3)</a> -->
+					</div>
+				</div>
+			</div>
 			<button type="submit">Поиск</button>
 		</form>
 		<ul class="recent-searches row">

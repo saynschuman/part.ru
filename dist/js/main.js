@@ -50,6 +50,44 @@
 	$('#category-search-list li ul li a').click(function(){
 		$('#input-search').val($(this).text());
 	})
+	$('#filter-choose-details').click(function(e){
+		e.preventDefault();
+		$('#filter-details-list').show();
+	})
+
+	$('.detail').click(function(){
+		setTimeout(function(){
+		  $('#filter-details-list').hide();
+		}, 100);
+		var tt = $(this).text();
+		$('#filter-choose-details').text(tt);
+		$('#add-after').append( "<span class='type-m'>" + tt + "</span><br>" );
+	})
+
+
+	$( '.type-m' ).on( 'click', function() {
+	    $( this ).remove();
+	});
+
+	$('#show-filter-button').click(function(e){
+		e.preventDefault();
+		// $(this).addClass('btn-drk');
+		$('.filter-container').show();
+	})
+
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $('.filter-container');
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
+
+	// $('#show-filter-button').blur(function(){
+	// 	setTimeout(function(){
+	// 	  $('.filter-container').hide();
+	// 	}, 200);
+	// })
 	
 
 })(jQuery);
