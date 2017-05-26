@@ -90,6 +90,12 @@
 		    && div.has(e.target).length === 0) { 
 			div.hide(); 
 		}
+		var loggedCont =  $('.logged-right-toggle');
+		if (!loggedCont.is(e.target) 
+		    && loggedCont.has(e.target).length === 0) { 
+			loggedCont.hide(); 
+		$('.logged-in').removeClass('box-sh');
+		}
 	});	
 
     $( '.type-m-container' ).on( 'click', '.delete-tag', function() {
@@ -111,5 +117,10 @@
     	setTimeout(function(){
 		  $('.autocomplete-block').hide();
 		}, 200);
+    })
+
+    $('.logged-in').click(function(){
+    	$('.logged-right-toggle').show();
+    	$(this).addClass('box-sh');
     })
 })(jQuery);
