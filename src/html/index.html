@@ -49,27 +49,8 @@
 							</li>
 						</ul>
 					</li>
-					<li><a href="">Запчасть</a>
-					<ul class="container">
-							<li class="col-md-6">
-								<a href="">AC Cars</a>
-								<a href="">Acura</a>
-								<a href="">Agrale</a>
-								<a href="">Aixam</a>
-								<a href="">Alfa Romeo</a>
-								<a href="">Alpina</a>
-								<a href="">Ariel</a>
-							</li>
-							<li class="col-md-6">
-								<a href="">Ashok Leyland</a>
-								<a href="">Aston Martin</a>
-								<a href="">Audi</a>
-								<a href="">Austin</a>
-								<a href="">AZLK (Москвич)</a>
-								<a href="">Beifang Benchi</a>
-								<a href="">BelAZ</a>
-							</li>
-						</ul>
+					<li id="det"><a href="">Запчасть</a>
+					
 					</li>
 					<li><a href="">Магазин</a>
 					<ul class="container">
@@ -216,7 +197,7 @@
 				</div>
 			</div>
 			<button id="show-filter-button" class="filter">...</button>
-			<div class="filter-container">
+			<div class="filter-container" id="filter-container">
 				<div class="filter-header">
 					Фильтр: <span>BMW x5</span>
 				</div>
@@ -263,6 +244,53 @@
 					</div>
 				</div>
 			</div>
+			<div class="filter-container" id="filter-container-detail">
+				<div class="filter-header">
+					Фильтр: <span>BMW x5</span>
+				</div>
+				<div class="filter-body">
+					<div class="col">
+						<span class="pr">Время</span>
+						<input name="dates" id="all" type="radio">
+						<label for="all">все</label>
+						<input name="dates" id="today" type="radio">
+						<label for="today">сегодня</label>
+						<input name="dates" id="yesterday" type="radio">
+						<label for="yesterday">вчера</label>
+						<input name="dates" id="weak" type="radio">
+						<label for="weak">неделя</label>
+						<input name="dates" id="month" type="radio">
+						<label for="month">месяц</label>
+					</div>
+					<div class="col">
+					<span class="pr">Цена</span>
+						<input name="price" id="5000" type="radio">
+						<label for="5000">до 5000 Р</label>
+						<input name="price" id="25000" type="radio">
+						<label for="25000">до 25000 Р</label>
+						<input name="price" id="50000" type="radio">
+						<label for="50000">до 50000 Р</label>
+						<input name="price" id="150000" type="radio">
+						<label for="150000">до 150000 Р</label>
+						<input name="price" id="250000" type="radio">
+						<label for="250000">до 250000 Р</label>
+					</div>
+					<div class="col">
+						<div class="title">Категория: <span>Автозапчасти</span></div>
+						<button id="filter-choose-details-det" >Выберите тип автозапчасти</button>
+						<ul id="filter-details-list-det">
+							<li class="detail">Мотор</li>
+							<li class="detail">Мощный карбюратор</li>
+							<li class="detail">Ротор</li>
+						</ul>
+						<div class="type-m-container-det">
+							<span id="add-after-det"></span>
+						</div>
+						<div class="more-container-det"></div>
+						<!-- <a href="" class="more">ещё (3)</a> -->
+					</div>
+				</div>
+			</div>
 			<button type="submit">Поиск</button>
 		</form>
 		<ul class="recent-searches row">
@@ -288,22 +316,6 @@
 				<a href="">подробнее</a>
 			</div>
 		</div>
-		<div class="item" style="background-image: url(img/slider-background.jpg);">
-			<div class="text container">
-				Покупка и продажа <br>
-				любых запчастей <br>
-				<span>без посредников</span>
-				<a href="">подробнее</a>
-			</div>
-		</div>
-		<div class="item" style="background-image: url(img/slider-background.jpg);">
-			<div class="text container">
-				Покупка и продажа <br>
-				любых запчастей <br>
-				<span>без посредников</span>
-				<a href="">подробнее</a>
-			</div>
-		</div>
 	</div>
 	<div class="auto-parts">
 		<div class="container">
@@ -313,7 +325,7 @@
 				<div class="col-md-1"><a href=""><img src="img/logos/2.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/3.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/4.png" alt=""></a></div>
-				<div class="col-md-1"><a href=""><img src="img/logos/5.png" alt=""></a></div>
+				<div class="col-md-1"><a href=""><img src="img/cars/skoda.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/6.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/7.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/8.png" alt=""></a></div>
@@ -325,111 +337,331 @@
 				<div class="col-md-1"><a href=""><img src="img/logos/14.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/15.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/16.png" alt=""></a></div>
-				<div class="col-md-1"><a href=""><img src="img/logos/17.png" alt=""></a></div>
+				<div class="col-md-1"><a href=""><img src="img/cars/hundai.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/18.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/19.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/20.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/21.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/22.png" alt=""></a></div>
 				<div class="col-md-1"><a href=""><img src="img/logos/23.png" alt=""></a></div>
-				<div class="col-md-1"><a href=""><img src="img/logos/24.png" alt=""></a></div>	
+				<div class="col-md-1"><a href=""><img src="img/cars/jeep.png" alt=""></a></div>	
 			</div>
 			<div class="row small">
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
-				<a href=""><div class="log col-md-2"><img src="img/rover.png" alt=""></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/1.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/2.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/3.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/4.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/5.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/6.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/7.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/8.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/9.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/10.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/11.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/12.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/13.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/14.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/15.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/16.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/17.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/18.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/19.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/20.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/21.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/22.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/23.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/24.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/25.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/26.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/27.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/28.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/29.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/30.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/31.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/32.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/33.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/34.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/35.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/36.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/37.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/38.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/39.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/40.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/41.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/42.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/43.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/44.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/45.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/46.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/47.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/48.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/49.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/50.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/51.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/52.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/53.png" alt=""><span class="model-name">cherry</span></div></a>
+				<a href=""><div class="log col-md-2"><img src="img/cars/54.png" alt=""><span class="model-name">cherry</span></div></a>
+				
 			</div>
 		</div>
+	</div>
+	<div class="part">
+		<div class="container part-cont">
+			<h2>Каталог автомобилей Part</h2>
+			<a href="" class="all-models">Все модели</a>
+			<div class="row">
+				<div class="col-md-3">
+					<form class="part-search" action="">
+						<input type="search" placeholder="Поиск по марке">
+					</form>
+					<ul class="part-models-list mCustomScrollbar" data-mcs-theme="dark">
+						<li><a href=""><img src="img/cars/11.png" alt=""> acura</a></li>
+						<li><a href=""><img src="img/cars/12.png" alt=""> bentley</a></li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a href=""><img src="img/cars/11.png" alt=""> acura</a></li>
+						<li><a href=""><img src="img/cars/12.png" alt=""> bentley</a></li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a href=""><img src="img/cars/11.png" alt=""> acura</a></li>
+						<li><a href=""><img src="img/cars/12.png" alt=""> bentley</a></li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a href=""><img src="img/cars/11.png" alt=""> acura</a></li>
+						<li><a href=""><img src="img/cars/12.png" alt=""> bentley</a></li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+						<li><a class="has-sublist" href=""><img src="img/cars/13.png" alt=""> cadillac</a>
+							<ul class="sub-sub-list">
+								<li><a href="">Chevrolet CAPTIVA</a></li>
+								<li><a href="">Chevrolet CRUZE</a></li>
+								<li><a href="">Chevrolet EVANDA</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<ul class="sort-by">
+						<li>Популярные</li>
+						<li>Новые</li>
+						<li>Скидки</li>
+						<li class="active">Акции</li>
+						<li>Рекомендуем</li>
+					</ul>
+						<div class="col-md-4">
+							<div class="letters-block">
+								<div class="letter">		
+									<div class="l">A</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">Б</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">В</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>							
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="letters-block">
+								<div class="letter">		
+									<div class="l">A</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">Б</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">В</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>							
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="letters-block">
+								<div class="letter">		
+									<div class="l">A</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">Б</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>
+								<div class="letter">		
+									<div class="l">В</div>
+									<ul>
+										<li><a href="">Аккумуляторный отсек 585</a></li>
+										<li><a href="">Амортизатор ведомой звезды 133</a></li>
+										<li><a href="">Амортизатор двигателя 16</a></li>
+										<li><a href="">Амортизаетор задний 277</a></li>
+										<li><a href="">Амортизатор капота 12</a></li>
+										<li><a href="">Амортизатор передний 5</a></li>
+										<li><a href="">Антенна 29</a></li>
+									</ul>
+								</div>							
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+
 	</div>
 	<div class="goods">
 		<div class="container">
 		<h2>Каталог авто-товаров</h2>
 			<div class="row">
 				<div class="col-md-3">
-					<div class="good big" style="background-image: url(img/good-1.png);">
-						<div class="info">Каталог запчастей <a href="">Подробнее</a></div>
-					</div>
+					<a href=""><div class="good big" style="background-image: url(img/good-1.png);">
+					<div class="mask"></div>
+						<div class="info">Каталог запчастей <span class="more">Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good small" style="background-image: url(img/good-2.png);">
-						<div class="info">Запчасти <br>для ТО <a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/good-3.png);">
-						<div class="info">Масла и<br>технические <br> жидкости <a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/good-4.png);">
-						<div class="info">Шины и <br>диски <a href="">Подробнее</a></div>
-					</div>
+					<a href=""><div class="good small" style="background-image: url(img/good-2.png);">
+					<div class="mask"></div>
+						<div class="info">Запчасти <br>для ТО <span class="more">Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/good-3.png);">
+					<div class="mask"></div>
+						<div class="info">Масла и<br>технические <br> жидкости <span class="more">Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/good-4.png);">
+					<div class="mask"></div>
+						<div class="info">Шины и <br>диски <span class="more">Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good medium" style="background-image: url(img/good-5.png);">
-						<div class="info">Аккумуляторы <a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/good-6.png);">
-						<div class="info">Автоэллектрика <a href="">Подробнее</a></div>
-					</div>
+					<a href=""><div class="good medium" style="background-image: url(img/good-5.png);">
+					<div class="mask"></div>
+						<div class="info">Аккумуляторы <span class="more">Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/good-6.png);">
+					<div class="mask"></div>
+						<div class="info">Автоэллектрика <span class="more">Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good small" style="background-image: url(img/good-7.png);">
-						<div class="info">Автоинструмент <a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/good-8.png);">
-						<div class="info">Стартеры и <br> генераторы<a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/good-9.png);">
-						<div class="info">Аксессуары <a href="">Подробнее</a></div>
-					</div>
+					<a href=""><div class="good small" style="background-image: url(img/good-7.png);">
+					<div class="mask"></div>
+						<div class="info">Автоинструмент <span class="more">Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/good-8.png);">
+					<div class="mask"></div>
+						<div class="info">Стартеры и <br> генераторы<span class="more">Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/good-9.png);">
+					<div class="mask"></div>
+						<div class="info">Аксессуары <span class="more">Подробнее</span></div>
+					</div></a>
 				</div>
 			</div>
 		</div>
@@ -439,40 +671,40 @@
 		<h2>Каталог автомобильных компаний</h2>
 			<div class="row">
 				<div class="col-md-3">
-					<div class="good big" style="background-image: url(img/box-1.png);">
+					<a href=""><div class="good big" style="background-image: url(img/box-1.png);">
 					<div class="corner"><img src="img/cat-1.png" alt=""></div>
-						<div class="info">Автосервисы <div class="quantity">2474 компании</div><a href="">Подробнее</a></div>
-					</div>
+						<div class="info">Автосервисы <div class="quantity">2474 компании</div><span >Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good small" style="background-image: url(img/box-2.png);">
+					<a href=""><div class="good small" style="background-image: url(img/box-2.png);">
 					<div class="corner"><img src="img/cat-2.png" alt=""></div>
-						<div class="info">Страхование<div class="quantity">245 компаний</div><a href="">Подробнее</a></div>
-					</div>
-					<div class="good medium" style="background-image: url(img/box-3.png);">
+						<div class="info">Страхование<div class="quantity">245 компаний</div><span >Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good medium" style="background-image: url(img/box-3.png);">
 					<div class="corner"><img src="img/cat-3.png" alt=""></div>
-						<div class="info">Автосалоны<div class="quantity">789 компаний</div><a href="">Подробнее</a></div>
-					</div>
+						<div class="info">Автосалоны<div class="quantity">789 компаний</div><span >Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good medium" style="background-image: url(img/box-4.png);">
+					<a href=""><div class="good medium" style="background-image: url(img/box-4.png);">
 					<div class="corner"><img src="img/cat-4-black.png" alt=""></div>
-						<div class="info">Автомойки<div class="quantity">601 компания</div><a href="">Подробнее</a></div>
-					</div>
-					<div class="good small" style="background-image: url(img/box-5.png);">
+						<div class="info">Автомойки<div class="quantity">601 компания</div><span >Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good small" style="background-image: url(img/box-5.png);">
 					<div class="corner"><img src="img/cat-5.png" alt=""></div>
-						<div class="info">Эвакуаторы<div class="quantity">3858 компаний</div><a href="">Подробнее</a></div>
-					</div>
+						<div class="info">Эвакуаторы<div class="quantity">3858 компаний</div><span >Подробнее</span></div>
+					</div></a>
 				</div>
 				<div class="col-md-3">
-					<div class="good small" style="background-image: url(img/box-6.png);">
+					<a href=""><div class="good small" style="background-image: url(img/box-6.png);">
 					<div class="corner"><img src="img/cat-6.png" alt=""></div>
-						<div class="info">Прокат авто<div class="quantity">28 компаний</div><a href="">Подробнее</a></div>
-					</div>
-					<div class="good medium" style="background-image: url(img/box-7.png);">
+						<div class="info">Прокат авто<div class="quantity">28 компаний</div><span >Подробнее</span></div>
+					</div></a>
+					<a href=""><div class="good medium" style="background-image: url(img/box-7.png);">
 					<div class="corner"><img src="img/cat-7.png" alt=""></div>
-						<div class="info">Станции техосмотра<div class="quantity">8458 компаний</div><a href="">Подробнее</a></div>
-					</div>
+						<div class="info">Станции техосмотра<div class="quantity">8458 компаний</div><span >Подробнее</span></div>
+					</div></a>
 				</div>
 			</div>
 		</div>
@@ -670,7 +902,7 @@
 					<div class="raiting-col-title">Магазины запчастей</div>
 					<div class="line first">
 						<div class=" inl number">1</div>	
-						<div class=" inl name">Торгпромснаб</div>
+						<div class=" inl name"><a href="">Торгпромснаб</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -682,7 +914,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">2</div>	
-						<div class=" inl name">ИП Кочубей...</div>
+						<div class=" inl name"><a href="">ИП Кочубей...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -694,7 +926,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">3</div>	
-						<div class=" inl name">Помойменя</div>
+						<div class=" inl name"><a href="">Помойменя</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -706,7 +938,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">4</div>	
-						<div class=" inl name">Визит</div>
+						<div class=" inl name"><a href="">Визит</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -718,7 +950,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">5</div>	
-						<div class=" inl name">ИП Краснов...</div>
+						<div class=" inl name"><a href="">ИП Краснов...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -730,7 +962,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">6</div>	
-						<div class=" inl name">Петротрест</div>
+						<div class=" inl name"><a href="">Петротрест</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -742,7 +974,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">7</div>	
-						<div class=" inl name">Форт</div>
+						<div class=" inl name"><a href="">Форт</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -754,7 +986,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">8</div>	
-						<div class=" inl name">Норд Ост</div>
+						<div class=" inl name"><a href="">Норд Ост</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -766,7 +998,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">9</div>	
-						<div class=" inl name">Военторг</div>
+						<div class=" inl name"><a href="">Военторг</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -778,7 +1010,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">10</div>	
-						<div class=" inl name">Злато</div>
+						<div class=" inl name"><a href="">Злато</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -794,10 +1026,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="raiting-col-title">Автосервисы</div>
+					<div class="raiting-col-title">Магазины запчастей</div>
 					<div class="line first">
 						<div class=" inl number">1</div>	
-						<div class=" inl name">Торгпромснаб</div>
+						<div class=" inl name"><a href="">Торгпромснаб</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -809,7 +1041,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">2</div>	
-						<div class=" inl name">ИП Кочубей...</div>
+						<div class=" inl name"><a href="">ИП Кочубей...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -821,7 +1053,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">3</div>	
-						<div class=" inl name">Помойменя</div>
+						<div class=" inl name"><a href="">Помойменя</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -833,7 +1065,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">4</div>	
-						<div class=" inl name">Визит</div>
+						<div class=" inl name"><a href="">Визит</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -845,7 +1077,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">5</div>	
-						<div class=" inl name">ИП Краснов...</div>
+						<div class=" inl name"><a href="">ИП Краснов...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -857,7 +1089,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">6</div>	
-						<div class=" inl name">Петротрест</div>
+						<div class=" inl name"><a href="">Петротрест</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -869,7 +1101,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">7</div>	
-						<div class=" inl name">Форт</div>
+						<div class=" inl name"><a href="">Форт</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -881,7 +1113,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">8</div>	
-						<div class=" inl name">Норд Ост</div>
+						<div class=" inl name"><a href="">Норд Ост</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -893,7 +1125,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">9</div>	
-						<div class=" inl name">Военторг</div>
+						<div class=" inl name"><a href="">Военторг</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -905,7 +1137,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">10</div>	
-						<div class=" inl name">Злато</div>
+						<div class=" inl name"><a href="">Злато</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -921,10 +1153,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="raiting-col-title">Автомойки</div>
+					<div class="raiting-col-title">Магазины запчастей</div>
 					<div class="line first">
 						<div class=" inl number">1</div>	
-						<div class=" inl name">Торгпромснаб</div>
+						<div class=" inl name"><a href="">Торгпромснаб</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -936,7 +1168,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">2</div>	
-						<div class=" inl name">ИП Кочубей...</div>
+						<div class=" inl name"><a href="">ИП Кочубей...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -948,7 +1180,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">3</div>	
-						<div class=" inl name">Помойменя</div>
+						<div class=" inl name"><a href="">Помойменя</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -960,7 +1192,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">4</div>	
-						<div class=" inl name">Визит</div>
+						<div class=" inl name"><a href="">Визит</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -972,7 +1204,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">5</div>	
-						<div class=" inl name">ИП Краснов...</div>
+						<div class=" inl name"><a href="">ИП Краснов...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -984,7 +1216,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">6</div>	
-						<div class=" inl name">Петротрест</div>
+						<div class=" inl name"><a href="">Петротрест</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -996,7 +1228,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">7</div>	
-						<div class=" inl name">Форт</div>
+						<div class=" inl name"><a href="">Форт</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1008,7 +1240,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">8</div>	
-						<div class=" inl name">Норд Ост</div>
+						<div class=" inl name"><a href="">Норд Ост</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1020,7 +1252,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">9</div>	
-						<div class=" inl name">Военторг</div>
+						<div class=" inl name"><a href="">Военторг</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1032,7 +1264,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">10</div>	
-						<div class=" inl name">Злато</div>
+						<div class=" inl name"><a href="">Злато</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1048,10 +1280,10 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="raiting-col-title">Автодилеры</div>
+					<div class="raiting-col-title">Магазины запчастей</div>
 					<div class="line first">
 						<div class=" inl number">1</div>	
-						<div class=" inl name">Торгпромснаб</div>
+						<div class=" inl name"><a href="">Торгпромснаб</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1063,7 +1295,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">2</div>	
-						<div class=" inl name">ИП Кочубей...</div>
+						<div class=" inl name"><a href="">ИП Кочубей...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1075,7 +1307,7 @@
 					</div>
 					<div class="line second">
 						<div class=" inl number">3</div>	
-						<div class=" inl name">Помойменя</div>
+						<div class=" inl name"><a href="">Помойменя</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1087,7 +1319,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">4</div>	
-						<div class=" inl name">Визит</div>
+						<div class=" inl name"><a href="">Визит</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1099,7 +1331,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">5</div>	
-						<div class=" inl name">ИП Краснов...</div>
+						<div class=" inl name"><a href="">ИП Краснов...</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1111,7 +1343,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">6</div>	
-						<div class=" inl name">Петротрест</div>
+						<div class=" inl name"><a href="">Петротрест</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1123,7 +1355,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">7</div>	
-						<div class=" inl name">Форт</div>
+						<div class=" inl name"><a href="">Форт</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1135,7 +1367,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">8</div>	
-						<div class=" inl name">Норд Ост</div>
+						<div class=" inl name"><a href="">Норд Ост</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1147,7 +1379,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">9</div>	
-						<div class=" inl name">Военторг</div>
+						<div class=" inl name"><a href="">Военторг</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
@@ -1159,7 +1391,7 @@
 					</div>
 					<div class="line">
 						<div class=" inl number">10</div>	
-						<div class=" inl name">Злато</div>
+						<div class=" inl name"><a href="">Злато</a></div>
 						<ul class="stars inl ">
 							<li class="red"></li>
 							<li class="red"></li>
