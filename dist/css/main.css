@@ -7535,7 +7535,9 @@ footer.footer {
   position: relative; }
 
 .part h2 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 25px;
+  display: block; }
 
 .part .all-models {
   position: absolute;
