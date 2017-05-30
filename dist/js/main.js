@@ -111,6 +111,12 @@
     	}
     });
 
+    $( '.type-m-container-det' ).on( 'click', '.delete-tag', function() {
+        $( this ).parent().remove();
+    });    
+
+    
+
     $('#input-search').focus(function(){
     	$('.autocomplete-block').show();
     })
@@ -156,12 +162,12 @@
 		$('#filter-details-list-det').show();
 	})
 
-	$('.detail').click(function(){
+	$('.detail-detail').click(function(){
 		setTimeout(function(){
 		  $('#filter-details-list-det').hide();
 		}, 100);
 		var tt = $(this).text();
-		$('#filter-choose-details').text(tt);
+		$('#filter-choose-details-det').text(tt);
 		$('#add-after-det').append( '<div class="type-m">' + tt + '<span class="delete-tag"></span><br></div>' );
 		if ($('#add-after .type-m').length > 3 ) {
 			var l = $('#add-after-det .type-m').length - 3;

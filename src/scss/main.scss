@@ -659,8 +659,12 @@ header.header {
 			font-size: 14px;
 			text-transform: uppercase;
 			color: #201f20;
-			padding-top: 18px;
+		    padding-top: 0;
 			font-family: 'Lato-Bold';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 55px;
 		}
 		.log {
 			padding: 0;
@@ -688,6 +692,9 @@ header.header {
     			width: auto;
     			float: left;
     			vertical-align: middle;
+    			position: absolute;
+    			top: 50%;
+    			transform: translateY(-50%);
     			&:hover {
 					box-shadow: none;
 				}
@@ -1922,7 +1929,26 @@ footer.footer {
 					color: #0a2a3d;
 					text-decoration: none;
 					padding: 4px 0;
-					display: block;
+					display: inline-block;
+					position: relative;
+					&::after {
+						content: '';
+						position: absolute;
+						left: 0;
+						bottom: 3px;
+						width: 0;
+						height: 1px;
+						background-color: #4f9ed2;
+						transition: .3s;
+					}
+					&:hover {
+						color: #4f9ed2;
+						text-decoration: none;
+						&::after {
+							width: 100%;
+							transition: .3s;
+						}
+					}
 				}
 			}
 		}
