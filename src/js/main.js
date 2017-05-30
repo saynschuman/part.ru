@@ -135,10 +135,6 @@
     	$('.location').text($(this).text());
     })
 
-	// $( "#det" ).mouseover(function(){
-	// 	$( "#filter-container-detail").show();
-	// })
-
 	$( "#det" ).hover(
 	  function() {
 	    $( "#filter-container-detail").show();
@@ -182,6 +178,14 @@
 		e.preventDefault();
 		$(this).next().slideToggle(200);
 		$(this).toggleClass('active');
+	})
+
+	$('.has-block').click(function(e){
+		e.preventDefault();
+		var blockId = $(this).attr('data-id');
+		$('.letters-block-all-models').hide();
+		$('div[data-label="' + blockId + '"]').show();
+
 	})
 
 })(jQuery);

@@ -1843,6 +1843,12 @@ footer.footer {
 }
 
 .part {
+	.letters-block-all-models {
+		display: none;
+		&.first-show {
+			display: block;
+		}
+	}
 	.part-cont {
 		position: relative;
 	}
@@ -1949,12 +1955,14 @@ footer.footer {
 			list-style: none;
 			padding: 0;
 			border-bottom: 1px solid #f9f7f8;
+			position: relative;
 			.sub-sub-list {
 				padding-left: 0;
 				display: none;
 				li {
 					a {
 						padding-left: 30px;
+						text-transform: none;
 						&:hover {
 							background-color: #d73a50;
 							color: #fff;
@@ -1973,6 +1981,13 @@ footer.footer {
 				text-decoration: none;
 				padding: 10px 0;
 				display: block;
+				padding-left: 30px;
+				&:hover {
+					color: #d11f3a;
+				}
+				&:focus {
+					color: #d11f3a;
+				}
 				&.has-sublist {
 					position: relative;
 					&.active {
@@ -1984,12 +1999,15 @@ footer.footer {
 						content: "\f105";
 						float: right;
 						font-family: FontAwesome;
-						padding-right: 30px;
+						padding-right: 35px;
 					}
 				}
 				img {
-					height: 26px;
-					width: auto;
+					height: auto;
+					width: 25px;
+					position: absolute;
+					left: 0;
+					top: 6px;
 				}
 			}
 		}
@@ -1998,4 +2016,8 @@ footer.footer {
 
 .mCSB_inside > .mCSB_container {
 	margin-right: 0;
+}
+
+.show {
+	display: block !important;
 }
