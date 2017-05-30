@@ -7672,6 +7672,9 @@ footer.footer {
         .part .part-models-list li .sub-sub-list li a:hover {
           background-color: #d73a50;
           color: #fff; }
+        .part .part-models-list li .sub-sub-list li a:focus {
+          background-color: #d73a50;
+          color: #fff; }
     .part .part-models-list li:last-child {
       border-bottom: none; }
     .part .part-models-list li a {
