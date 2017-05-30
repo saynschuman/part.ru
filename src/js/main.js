@@ -188,10 +188,22 @@
 
 	$('.has-block').click(function(e){
 		e.preventDefault();
+		
+	})
+
+	$('.has-block').focus(function(){
 		var blockId = $(this).attr('data-id');
 		$('.letters-block-all-models').hide();
 		$('div[data-label="' + blockId + '"]').show();
-
 	})
+
+	$('.open-car-list').click(function(e){
+		e.preventDefault();
+		$('.auto-parts').hide();
+		$('.part').show();
+		var model = $(this).attr('data-model');
+		$("#" + model).focus();
+	})
+
 
 })(jQuery);
