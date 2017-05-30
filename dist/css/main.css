@@ -5989,6 +5989,9 @@ h4 {
   font-style: 24px;
   line-height: 28px; }
 
+a {
+  outline: none !important; }
+
 header.header {
   font-family: 'lato'; }
   header.header .top-header {
@@ -7663,7 +7666,8 @@ footer.footer {
         display: none; }
         .part .part-models-list li .sub-sub-list li a {
           padding-left: 30px;
-          text-transform: none; }
+          text-transform: none;
+          outline: none !important; }
           .part .part-models-list li .sub-sub-list li a:hover {
             background-color: #d73a50;
             color: #fff; }
@@ -7671,7 +7675,7 @@ footer.footer {
             background-color: #d73a50;
             color: #fff;
             outline: none;
-            border: none; }
+            outline: none !important; }
           .part .part-models-list li .sub-sub-list li a:active {
             outline: none;
             border: none; }

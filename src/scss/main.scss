@@ -4,6 +4,10 @@
 @import "includes/general";
 @import "includes/ui.scss";
 
+a {
+    outline: none !important;
+}
+
 header.header {
 	 font-family: 'lato';
 	.top-header {
@@ -1990,6 +1994,7 @@ footer.footer {
 					a {
 						padding-left: 30px;
 						text-transform: none;
+						outline: none !important;
 						&:hover {
 							background-color: #d73a50;
 							color: #fff;
@@ -1998,7 +2003,7 @@ footer.footer {
 							background-color: #d73a50;
 							color: #fff;
 							outline: none;
-							border: none;
+							outline: none !important;
 						}
 						&:active {
 							outline: none;
