@@ -2063,3 +2063,100 @@ footer.footer {
 .show {
 	display: block !important;
 }
+
+// one detail page
+
+.detail-page {
+	height: auto;
+	width: 100%;
+	background-image: url(../img/detail-divider-background.png);
+	background-position: top center;
+	background-repeat-y: no-repeat; 
+	background-repeat-x: repeat; 
+}
+
+.table-chooser-detail {
+	margin-bottom: 16px;
+	margin-top: 30px;
+	background-color: #fff;
+	table {
+		width: 100%;
+    	max-width: 100%;
+    	td {
+    		padding: 8px;
+    		border: 1px solid #d4cccd;
+    		vertical-align: middle;
+    		.car {
+    			width: 100%;
+    			height: 54px;
+    			max-width: 71px;
+    			background-size: cover;
+    		}
+    		&:first-child {
+    			border-right: none;
+    			padding: 0;
+    			width: 71px;
+    		}
+    		&:nth-child(2) {
+    			border-left: none;
+    		}
+    		&:nth-child(7) {
+    			border-right: none;
+    		}
+    		&:last-child {
+    			border: 1px solid #eae3e4;
+    			width: 33px;
+    			background-color: #eae3e4;
+    			position: relative;
+    			.clear {
+    				display: block;
+    				position: absolute;
+    				width: 100%;
+    				height: 100%;
+    				transition: 0s;
+    				top: 0;
+					left: 0;
+    				&::after {
+    					content: '';
+						height: 12px;
+						width: 12px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						background-image: url(../img/clear.png); 
+						background-position: 0 0; 
+    				}
+    				&:hover {
+    					transition: 0s;
+    					&::after {
+    						background-position: 12px 0;
+    					}
+    				}
+    			}
+    		}
+    	}
+    	span {
+    		display: block;
+    		color: #9f9b9b;
+    		font-size: 11px;
+    		letter-spacing: .5px;
+    	}
+    	.tog {
+    		display: block;
+    		font-family: 'Lato-Bold';
+    		font-size: 14px;
+    		color: #0a2a3d;
+    		position: relative;
+    		text-decoration: none;
+    		&::after {
+    			content: '';
+    			border: 4px solid transparent;	border-top: 4px solid #d4cccd;
+    			position: absolute;
+    			right: 0;
+    			top: 0;
+    			transform: translateY(50%);
+    		}
+    	}
+	}
+}
