@@ -7841,7 +7841,7 @@ footer.footer {
                 transform: translateY(50%); }
 
 .table-detail-body {
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
   .table-detail-body table {
     width: 100%;
     max-width: 100%; }
@@ -7965,3 +7965,525 @@ footer.footer {
           font-size: 14px;
           color: #0a2a3d;
           line-height: 1.7; }
+
+.offers .nav-offers {
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-bottom: 17px; }
+  .offers .nav-offers li {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid #d4cccd;
+    border-right: none;
+    color: #0a2a3d;
+    font-family: 'Lato-Bold';
+    float: left;
+    cursor: pointer; }
+    .offers .nav-offers li:first-child {
+      -webkit-border-radius: 4px 0 0 4px;
+              border-radius: 4px 0 0 4px; }
+    .offers .nav-offers li:last-child {
+      border-right: 1px solid #d4cccd;
+      -webkit-border-radius: 0 4px 4px 0;
+              border-radius: 0 4px 4px 0; }
+    .offers .nav-offers li.active {
+      background-color: #d11f3a;
+      font-family: 'Lato-Bold';
+      color: #fff; }
+
+.offers .offers-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 12px; }
+  .offers .offers-table tr {
+    border: 1px solid #f8f6f6; }
+    .offers .offers-table tr.green-shadow {
+      color: #201f21;
+      font-size: 14px;
+      z-index: 1; }
+    .offers .offers-table tr.red-line td:first-child {
+      border-left: 2px solid red; }
+    .offers .offers-table tr th {
+      background-color: #f4f1f1;
+      color: #9f9b9b;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: 'Lato-Bold';
+      padding: 15px 23px; }
+    .offers .offers-table tr td {
+      padding: 15px 23px; }
+      .offers .offers-table tr td .send {
+        color: #4e9e4a;
+        white-space: nowrap; }
+      .offers .offers-table tr td .firm {
+        color: #0a2a3d;
+        font-size: 13px; }
+      .offers .offers-table tr td .firm-cat {
+        font-size: 10px;
+        color: #9f9b9b;
+        font-family: 'Lato-Bold';
+        text-transform: uppercase; }
+      .offers .offers-table tr td.seller {
+        padding: 0;
+        width: 150px; }
+      .offers .offers-table tr td ul {
+        margin: 0;
+        padding: 0; }
+        .offers .offers-table tr td ul li {
+          display: inline-block;
+          vertical-align: middle;
+          list-style: none;
+          padding: 0; }
+          .offers .offers-table tr td ul li:first-child {
+            width: 25%;
+            float: left; }
+            .offers .offers-table tr td ul li:first-child img {
+              width: 24px;
+              height: 24px;
+              margin-top: 5px; }
+          .offers .offers-table tr td ul li:last-child {
+            width: 75%;
+            float: right; }
+      .offers .offers-table tr td.rait {
+        padding: 0;
+        padding-left: 15px;
+        width: 120px; }
+        .offers .offers-table tr td.rait span {
+          display: inline-block; }
+          .offers .offers-table tr td.rait span:first-child {
+            position: relative;
+            margin-right: 30px; }
+            .offers .offers-table tr td.rait span:first-child::before {
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-image: url(../img/star.png);
+              position: absolute;
+              top: 1px;
+              left: -20px; }
+          .offers .offers-table tr td.rait span:last-child {
+            position: relative; }
+            .offers .offers-table tr td.rait span:last-child::before {
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-image: url(../img/dial.png);
+              position: absolute;
+              top: 1px;
+              left: -20px; }
+      .offers .offers-table tr td.price {
+        padding: 0;
+        text-align: center; }
+      .offers .offers-table tr td.green {
+        background-color: #4e9e4a;
+        color: #fff;
+        width: 104px;
+        padding: 0;
+        text-align: center; }
+      .offers .offers-table tr td.cir {
+        padding: 15px 0;
+        padding-left: 23px; }
+
+.offers .show-more {
+  font-size: 15px;
+  display: block;
+  color: #0a2a3d;
+  font-family: 'Lato-Bold';
+  text-align: center;
+  padding: 10px;
+  width: 321px;
+  border: 2px solid #d11f3a;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  margin: auto;
+  text-decoration: none; }
+  .offers .show-more:hover {
+    background-color: #d11f3a;
+    color: #fff; }
+
+.usefull h3 {
+  margin-bottom: 30px; }
+
+.usefull .title {
+  font-size: 14px;
+  color: #d4cccd;
+  font-family: 'Lato-Bold';
+  text-transform: uppercase;
+  padding-left: 50px;
+  position: relative;
+  padding-bottom: 5px; }
+  .usefull .title img {
+    position: absolute;
+    left: 0;
+    top: -5px; }
+
+.usefull .usefull-list {
+  margin: 0;
+  padding-left: 50px; }
+  .usefull .usefull-list li {
+    list-style: none;
+    display: block;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    color: #201f21;
+    font-family: 'Lato-Bold'; }
+
+.analogs {
+  margin-top: 40px; }
+  .analogs .offers-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 12px; }
+    .analogs .offers-table tr {
+      border: 1px solid #f8f6f6; }
+      .analogs .offers-table tr th {
+        background-color: #f4f1f1;
+        color: #9f9b9b;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: 'Lato-Bold';
+        padding: 15px 23px; }
+      .analogs .offers-table tr td {
+        padding: 15px 23px; }
+  .analogs .an-cont {
+    background-color: #4f9ed2;
+    padding: 20px 0; }
+  .analogs .col img {
+    float: left;
+    margin-right: 30px; }
+  .analogs .col p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px; }
+
+.all-offers .all-offers-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 12px; }
+  .all-offers .all-offers-table tr {
+    border: 1px solid #f8f6f6; }
+    .all-offers .all-offers-table tr th {
+      background-color: #f4f1f1;
+      color: #9f9b9b;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: 'Lato-Bold';
+      padding: 15px 23px; }
+    .all-offers .all-offers-table tr td {
+      padding: 23px; }
+      .all-offers .all-offers-table tr td span {
+        color: #4a799e; }
+      .all-offers .all-offers-table tr td .send {
+        color: #4e9e4a;
+        white-space: nowrap; }
+      .all-offers .all-offers-table tr td .firm {
+        color: #0a2a3d;
+        font-size: 13px; }
+      .all-offers .all-offers-table tr td .firm-cat {
+        font-size: 10px;
+        color: #9f9b9b;
+        font-family: 'Lato-Bold';
+        text-transform: uppercase; }
+      .all-offers .all-offers-table tr td.seller {
+        padding: 0;
+        width: 150px;
+        padding-left: 23px; }
+      .all-offers .all-offers-table tr td ul {
+        margin: 0;
+        padding: 0; }
+        .all-offers .all-offers-table tr td ul li {
+          display: inline-block;
+          vertical-align: middle;
+          list-style: none;
+          padding: 0; }
+          .all-offers .all-offers-table tr td ul li:first-child {
+            width: 25%;
+            float: left; }
+            .all-offers .all-offers-table tr td ul li:first-child img {
+              width: 24px;
+              height: 24px;
+              margin-top: 5px; }
+          .all-offers .all-offers-table tr td ul li:last-child {
+            width: 75%;
+            float: right; }
+      .all-offers .all-offers-table tr td.rait {
+        padding: 0;
+        padding-left: 15px;
+        width: 120px; }
+        .all-offers .all-offers-table tr td.rait span {
+          display: inline-block; }
+          .all-offers .all-offers-table tr td.rait span:first-child {
+            position: relative;
+            margin-right: 30px; }
+            .all-offers .all-offers-table tr td.rait span:first-child::before {
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-image: url(../img/star.png);
+              position: absolute;
+              top: 1px;
+              left: -20px; }
+          .all-offers .all-offers-table tr td.rait span:last-child {
+            position: relative; }
+            .all-offers .all-offers-table tr td.rait span:last-child::before {
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-image: url(../img/dial.png);
+              position: absolute;
+              top: 1px;
+              left: -20px; }
+      .all-offers .all-offers-table tr td.price {
+        padding: 0;
+        text-align: center; }
+      .all-offers .all-offers-table tr td.green {
+        background-color: #4e9e4a;
+        color: #fff;
+        width: 104px;
+        padding: 0;
+        text-align: center; }
+      .all-offers .all-offers-table tr td.cir {
+        padding: 15px 0;
+        padding-left: 23px; }
+
+.ask {
+  font-size: 14px;
+  color: #0a2a3d;
+  font-family: 'Lato-Bold';
+  border: 1px solid #4f9ed2;
+  width: 192px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  display: block; }
+  .ask:hover {
+    text-decoration: none;
+    background-color: #4f9ed2;
+    color: #fff; }
+
+.questions {
+  position: relative;
+  margin-bottom: 50px; }
+  .questions .questions-block {
+    border: 1px solid #eae3e4;
+    border-left: none;
+    border-right: none; }
+    .questions .questions-block .inner {
+      padding: 10px;
+      height: 400px;
+      padding-right: 0; }
+    .questions .questions-block .left {
+      width: 373px;
+      float: left;
+      border-right: 1px solid #eae3e4; }
+      .questions .questions-block .left ul {
+        margin: 0;
+        padding: 0; }
+        .questions .questions-block .left ul li {
+          list-style: none;
+          padding: 0;
+          padding-right: 20px; }
+          .questions .questions-block .left ul li a {
+            padding: 10px;
+            display: block;
+            font-size: 15px;
+            color: #9f9b9b;
+            text-decoration: none; }
+            .questions .questions-block .left ul li a:focus {
+              color: #4a799e; }
+            .questions .questions-block .left ul li a:hover {
+              color: #4a799e; }
+    .questions .questions-block .right {
+      width: -webkit-calc(100% - 373px);
+      width: calc(100% - 373px);
+      float: right;
+      height: 400px;
+      padding: 25px 20px; }
+      .questions .questions-block .right .q-title {
+        color: #4a799e;
+        margin-bottom: 20px; }
+      .questions .questions-block .right p {
+        font-size: 15px;
+        color: #201f21;
+        margin-bottom: 20px; }
+
+.reviews {
+  position: relative; }
+  .reviews .divider {
+    height: 1px;
+    width: 100%;
+    background-color: #eae3e4;
+    margin: 20px 0; }
+  .reviews .review .review-header {
+    margin-bottom: 10px; }
+    .reviews .review .review-header .it {
+      display: inline-block; }
+      .reviews .review .review-header .it:first-child {
+        width: 134px; }
+      .reviews .review .review-header .it:nth-child(2) {
+        width: 134px;
+        float: right;
+        text-align: right; }
+        .reviews .review .review-header .it:nth-child(2) span {
+          color: #0a2a3d;
+          font-size: 14px;
+          position: relative; }
+          .reviews .review .review-header .it:nth-child(2) span::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-image: url(../img/dial.png);
+            margin-right: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            background-repeat: no-repeat; }
+      .reviews .review .review-header .it:last-child {
+        width: 200px;
+        float: right; }
+        .reviews .review .review-header .it:last-child .r {
+          color: #0a2a3d;
+          font-size: 14px;
+          float: right;
+          padding-right: 50px; }
+        .reviews .review .review-header .it:last-child .stars {
+          padding: 0;
+          margin: 0;
+          width: 60%;
+          padding-left: 10px;
+          display: inline-block; }
+          .reviews .review .review-header .it:last-child .stars li {
+            display: inline-block;
+            height: 17px;
+            width: 17px;
+            background-image: url(../img/yellow-stars-sprite.png); }
+            .reviews .review .review-header .it:last-child .stars li.yellow {
+              background-position: 0 0; }
+            .reviews .review .review-header .it:last-child .stars li.white {
+              background-position: 17px 0; }
+      .reviews .review .review-header .it .log {
+        margin: 0;
+        padding: 0; }
+        .reviews .review .review-header .it .log li {
+          display: inline-block;
+          vertical-align: middle;
+          list-style: none;
+          padding: 0; }
+          .reviews .review .review-header .it .log li .firm {
+            color: #0a2a3d;
+            font-size: 13px; }
+          .reviews .review .review-header .it .log li .firm-cat {
+            font-size: 10px;
+            color: #9f9b9b;
+            font-family: 'Lato-Bold';
+            text-transform: uppercase; }
+          .reviews .review .review-header .it .log li:first-child {
+            width: 25%;
+            float: left;
+            color: #0a2a3d; }
+            .reviews .review .review-header .it .log li:first-child img {
+              width: 24px;
+              height: 24px;
+              margin-top: 5px; }
+          .reviews .review .review-header .it .log li:last-child {
+            width: 75%;
+            float: right; }
+  .reviews .review .review-body p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #201f21; }
+
+.help-block form {
+  border: 1px solid #c8d7e2;
+  padding: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 30px; }
+  .help-block form ul {
+    margin: 0;
+    padding: 0; }
+    .help-block form ul li {
+      display: inline-block;
+      padding: 0;
+      list-style: none;
+      color: #201f21;
+      font-size: 15px;
+      font-family: 'Lato-Bold';
+      margin-right: 10px; }
+      .help-block form ul li:first-child {
+        margin-right: 50px; }
+      .help-block form ul li label {
+        font-size: 14px;
+        color: #0a2a3d;
+        font-family: 'Lato-Bold';
+        border: 1px solid #eae3e4;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        padding: 7px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer; }
+      .help-block form ul li input {
+        display: none; }
+        .help-block form ul li input:checked + label {
+          border: 1px solid #4f9ed2; }
+
+.raiting-bl .rait-header {
+  background-color: #f7f8fa;
+  padding: 15px;
+  font-size: 24px; }
+  .raiting-bl .rait-header .inl {
+    display: inline-block;
+    vertical-align: middle; }
+  .raiting-bl .rait-header .tit {
+    color: #333;
+    font-family: 'Lato-Light'; }
+  .raiting-bl .rait-header .num {
+    float: right; }
+    .raiting-bl .rait-header .num span:first-child {
+      color: #ffcc33; }
+    .raiting-bl .rait-header .num span:nth-child(2) {
+      color: #d4cccd; }
+    .raiting-bl .rait-header .num span:last-child {
+      color: #9f9b9b; }
+
+.raiting-bl .rait-body {
+  padding: 15px; }
+  .raiting-bl .rait-body .inl {
+    display: inline-block;
+    vertical-align: middle; }
+  .raiting-bl .rait-body .line {
+    margin-bottom: 25px; }
+    .raiting-bl .rait-body .line .stars {
+      padding: 0;
+      margin: 0;
+      width: 123px;
+      display: inline-block;
+      float: left;
+      padding-right: 20px; }
+      .raiting-bl .rait-body .line .stars li {
+        display: inline-block;
+        height: 17px;
+        width: 17px;
+        background-image: url(../img/yellow-stars-sprite.png); }
+        .raiting-bl .rait-body .line .stars li.yellow {
+          background-position: 0 0; }
+        .raiting-bl .rait-body .line .stars li.white {
+          background-position: 17px 0; }
+    .raiting-bl .rait-body .line .quantity {
+      font-size: 14px;
+      color: #0a2a3d;
+      float: left;
+      width: 150px;
+      text-align: center; }
+    .raiting-bl .rait-body .line .reviews {
+      font-size: 14px;
+      color: #0a2a3d;
+      float: right; }
