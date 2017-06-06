@@ -8401,39 +8401,42 @@ footer.footer {
     font-size: 15px;
     color: #201f21; }
 
-.help-block form {
-  border: 1px solid #c8d7e2;
-  padding: 20px;
-  padding-bottom: 15px;
-  margin-bottom: 30px; }
-  .help-block form ul {
-    margin: 0;
-    padding: 0; }
-    .help-block form ul li {
-      display: inline-block;
-      padding: 0;
-      list-style: none;
-      color: #201f21;
-      font-size: 15px;
-      font-family: 'Lato-Bold';
-      margin-right: 10px; }
-      .help-block form ul li:first-child {
-        margin-right: 50px; }
-      .help-block form ul li label {
-        font-size: 14px;
-        color: #0a2a3d;
+.help-block {
+  margin-right: 9px;
+  margin-left: 9px; }
+  .help-block form {
+    border: 1px solid #c8d7e2;
+    padding: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 30px; }
+    .help-block form ul {
+      margin: 0;
+      padding: 0; }
+      .help-block form ul li {
+        display: inline-block;
+        padding: 0;
+        list-style: none;
+        color: #201f21;
+        font-size: 15px;
         font-family: 'Lato-Bold';
-        border: 1px solid #eae3e4;
-        -webkit-border-radius: 5px;
-                border-radius: 5px;
-        padding: 7px;
-        width: 50px;
-        text-align: center;
-        cursor: pointer; }
-      .help-block form ul li input {
-        display: none; }
-        .help-block form ul li input:checked + label {
-          border: 1px solid #4f9ed2; }
+        margin-right: 10px; }
+        .help-block form ul li:first-child {
+          margin-right: 50px; }
+        .help-block form ul li label {
+          font-size: 14px;
+          color: #0a2a3d;
+          font-family: 'Lato-Bold';
+          border: 1px solid #eae3e4;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          padding: 7px;
+          width: 50px;
+          text-align: center;
+          cursor: pointer; }
+        .help-block form ul li input {
+          display: none; }
+          .help-block form ul li input:checked + label {
+            border: 1px solid #4f9ed2; }
 
 .raiting-bl .rait-header {
   background-color: #f7f8fa;
