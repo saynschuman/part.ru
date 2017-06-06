@@ -232,4 +232,42 @@
 		nextArrow: '<div class="next"></div>'
 	})
 
+	$('#clear').click(function(e){
+		e.preventDefault();
+		$('.table-chooser-detail').hide();
+	})
+
+	$('.offers .nav-offers li').click(function(){
+		$('.offers .nav-offers li').removeClass('active');
+		$(this).addClass('active');
+	})
+
+	$('#close-modal').click(function(){
+		$('.popup-wrapper').removeClass('active');
+		$('.big-popup').removeClass('active');
+		$('body').removeClass('no-scroll');
+	})
+
+	$('.show-popup').click(function(e){
+		e.preventDefault();
+		$('.popup-wrapper').addClass('active');
+		$('.big-popup').addClass('active');
+		$('body').scrollTop(0).addClass('no-scroll');
+	})
+
+	// спорный момент
+
+	$('.offers .offers-table tr').click(function(){
+		$('.popup-wrapper').removeClass('active');
+		$('.big-popup').removeClass('active');
+		$('body').removeClass('no-scroll');
+	})
+
+	$('.offers .offers-table tr').click(function(e){
+		e.preventDefault();
+		$('.popup-wrapper').addClass('active');
+		$('.big-popup').addClass('active');
+		$('body').scrollTop(0).addClass('no-scroll');
+	})
+
 })(jQuery);

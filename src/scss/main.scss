@@ -8,6 +8,12 @@ a {
 	outline: none !important;
 }
 
+body {
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
 header.header {
 	font-family: 'lato';
 	.top-header {
@@ -2073,11 +2079,11 @@ footer.footer {
 	background-position: top center;
 	background-repeat-y: no-repeat; 
 	background-repeat-x: repeat; 
+	padding-top: 30px;
 }
 
 .table-chooser-detail {
 	margin-bottom: 16px;
-	margin-top: 30px;
 	background-color: #fff;
 	table {
 		width: 100%;
@@ -2390,6 +2396,7 @@ footer.footer {
 		margin-bottom: 12px;
 		tr {
 			border: 1px solid #f8f6f6;
+			cursor: pointer;
 			&.green-shadow {
 				// box-shadow: 0px 0px 10px 0px rgba(78, 158, 74, 0.55);
 				// border: 1px solid rgba(78, 158, 74, 0.55);
@@ -2531,6 +2538,11 @@ footer.footer {
 	h3 {
 		margin-bottom: 30px;
 	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	.title {
 		font-size: 14px;
 		color: #d4cccd;
@@ -2578,6 +2590,9 @@ footer.footer {
 			}
 			td {
 				padding: 15px 23px;
+				a {
+					color: #333;
+				}
 			}	
 		}
 	}
@@ -2586,6 +2601,9 @@ footer.footer {
 		padding: 20px 0;
 	}
 	.col {
+		a {
+			text-decoration: none;
+		}
 		img {
 			float: left;
 			margin-right: 30px;
@@ -3014,5 +3032,218 @@ footer.footer {
 				float: right;
 			}
 		}
+	}
+}
+
+// popups
+
+.popup-wrapper {
+	background-color: rgba(0,0,0,.8);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.big-popup {
+	padding: 18px 0 23px;
+	width: 656px;
+	height: auto;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: relative;
+	z-index: 99;
+	.divider {
+		height: 1px;
+		width: 100%;
+		background-color: #e9e5e6;
+		margin: 3px 0 18px;
+	}
+	.block {
+		padding: 0 32px;
+	}
+	.date {
+		font-size: 13px;
+		color: #9f9b9b;
+		font-family: 'Lato-Medium';
+		span {
+			color: #4e9e4a;
+			margin-left: 5px;
+		}
+	}
+	.title {
+		font-size: 24px;
+		color: #333;
+		font-family: 'Lato-Light';
+		margin-top: 12px;
+		letter-spacing: 0.5px;
+	}
+	.cart {
+		padding: 0;
+		margin: 0;
+		margin-top: 9px;
+		tr {
+			td {
+				padding-bottom: 13px;
+				&:first-child {
+					font-size: 12px;
+					color: #9f9b9b;
+					width: 151px;
+				}
+				&:last-child {
+					font-size: 14px;
+					color: #0a2a3d;
+					a {
+						color: #4a799e;
+						text-decoration: underline;
+						display: block;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					span {
+						&::before {
+							content: '';
+							display: inline-block;
+							vertical-align: middle;
+							margin-right: 9px;
+						}
+						&.star {
+							&::before {
+								height: 15px;
+								width: 16px;
+								background-image: url(../img/star.png); 
+							}
+
+						}
+						&.review {
+							&::before {
+								height: 16px;
+								width: 16px;
+								background-image: url(../img/dial.png); 
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
+	.seller {
+		font-size: 24px;
+		font-family: 'Lato-Light';
+		span {
+			&::before {
+				content: '';
+				height: 24px;
+				width: 24px;
+				margin-right: 16px;
+				margin-left: 8px;
+				background-image: url(../img/log-sl.png); 
+				display: inline-block;
+				vertical-align: middle;
+			}
+		} 
+	}
+	.contacts {
+		padding: 0;
+		margin: 0;
+		margin-top: 14px;
+		margin-bottom: 23px;
+		li {
+			list-style: none;
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			font-size: 15px;
+			color: #333;
+			&:first-child {
+				margin-right: 54px;
+				a {
+					&::before {
+						content: '';
+						height: 21px;
+						width: 20px;
+						background-image: url(../img/contacts-tel.png); 
+						display: inline-block;
+						vertical-align: middle;
+						background-position: 0 0; 
+						margin-right: 9px;
+					}
+					&:hover {
+						&::before {
+							background-position: 20px 0; 
+						}
+					}
+				}
+			}
+			&:last-child {
+				a {
+					&::before {
+						content: '';
+						height: 17px;
+						width: 20px;
+						background-image: url(../img/contacts-message.png); 
+						display: inline-block;
+						vertical-align: middle;
+						background-position: 20px 0; 
+						margin-right: 7px;
+					}
+					&:hover {
+						&::before {
+							background-position: 0 0; 
+						}
+					}
+				}
+			}
+			a {
+				font-size: 15px;
+				color: #333;
+				text-decoration: none;
+			}
+		}
+	}
+	.info {
+		font-size: 13px;
+		color: #201f21;
+		padding: 22px 17px;
+		background-color: #fff7e1;
+		a {
+			color: #4a799e;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.narrow-block {
+		padding: 0 16px;
+	}
+	.close-modal {
+		height: 15px;
+		width: 15px;
+		background-image: url(../img/close-modal.png);
+		background-position: 0 0;
+		position: absolute;
+		top: -26px;
+		right: -26px;
+		cursor: pointer;
+		&.active {
+			background-position: 15px 0;
+		}
+		&:hover {
+			background-position: 15px 0;
+		}  
 	}
 }
