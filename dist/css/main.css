@@ -8134,11 +8134,13 @@ footer.footer {
   .usefull .usefull-list li {
     list-style: none;
     display: block;
-    padding: 5px 0;
-    margin: 0;
-    font-size: 14px;
-    color: #201f21;
-    font-family: 'Lato-Bold'; }
+    margin: 0; }
+    .usefull .usefull-list li a {
+      padding: 5px 0;
+      display: block;
+      font-size: 14px;
+      color: #201f21;
+      font-family: 'Lato-Bold'; }
 
 .analogs {
   margin-top: 40px; }
@@ -8177,7 +8179,14 @@ footer.footer {
   max-width: 100%;
   margin-bottom: 12px; }
   .all-offers .all-offers-table tr {
-    border: 1px solid #f8f6f6; }
+    border: 1px solid #f8f6f6;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .all-offers .all-offers-table tr:hover {
+      background: rgba(244, 241, 241, 0.5);
+      -webkit-transition: .3s;
+      transition: .3s; }
     .all-offers .all-offers-table tr th {
       background-color: #f4f1f1;
       color: #9f9b9b;
@@ -8318,7 +8327,10 @@ footer.footer {
       width: calc(100% - 373px);
       float: right;
       height: 400px;
-      padding: 25px 20px; }
+      padding: 25px 20px;
+      display: none; }
+      .questions .questions-block .right.active {
+        display: block; }
       .questions .questions-block .right .q-title {
         color: #4a799e;
         margin-bottom: 20px; }

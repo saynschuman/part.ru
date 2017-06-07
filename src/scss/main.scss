@@ -2563,11 +2563,14 @@ footer.footer {
 		li {
 			list-style: none;
 			display: block;
-			padding: 5px 0;
 			margin: 0;
-			font-size: 14px;
-			color: #201f21;
-			font-family: 'Lato-Bold';
+			a {
+				padding: 5px 0;
+				display: block;
+				font-size: 14px;
+				color: #201f21;
+				font-family: 'Lato-Bold';
+			}
 		}
 	}
 }
@@ -2623,6 +2626,12 @@ footer.footer {
 		margin-bottom: 12px;
 		tr {
 			border: 1px solid #f8f6f6;
+			cursor: pointer;
+			transition: .3s;
+			&:hover {
+				background: rgba(244, 241, 241, .5);
+				transition: .3s;
+			}
 			th {
 				background-color: #f4f1f1;
 				color: #9f9b9b;
@@ -2795,6 +2804,10 @@ footer.footer {
 			float: right;
 			height: 400px;
 			padding: 25px 20px;
+			display: none;
+			&.active {
+				display: block;
+			}
 			.q-title {
 				color: #4a799e;
 				margin-bottom: 20px;
