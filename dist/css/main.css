@@ -5995,6 +5995,13 @@ a {
 body.no-scroll {
   overflow: hidden; }
 
+h1 {
+  font-size: 36px;
+  color: #333;
+  font-family: 'Lato-Light';
+  margin: 0;
+  padding: 0; }
+
 header.header {
   font-family: 'lato'; }
   header.header .top-header {
@@ -8670,3 +8677,289 @@ footer.footer {
       background-position: 15px 0; }
     .big-popup .close-modal:hover {
       background-position: 15px 0; }
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px; }
+  .breadcrumbs li {
+    display: inline-block;
+    padding: 0;
+    color: #201f21; }
+    .breadcrumbs li::after {
+      content: '→';
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #9f9b9b; }
+    .breadcrumbs li a {
+      color: #9f9b9b;
+      font-size: 12px;
+      position: relative;
+      text-decoration: none; }
+      .breadcrumbs li a:hover::after {
+        width: 100%;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      .breadcrumbs li a::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: #9f9b9b;
+        opacity: .5;
+        -webkit-transition: .3s;
+        transition: .3s; }
+
+.catalog-brands {
+  padding-top: 18px; }
+  .catalog-brands .divider {
+    height: 1px;
+    width: 100%;
+    background: #d4cccd; }
+  .catalog-brands .brands {
+    padding-top: 32px; }
+    .catalog-brands .brands .brand {
+      background: transparent;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      border: 1px solid transparent;
+      padding: 16px;
+      padding-bottom: 26px;
+      padding-top: 8px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      position: relative;
+      height: 160px;
+      margin-bottom: 35px; }
+      .catalog-brands .brands .brand:hover {
+        border: 1px solid #e9e5e6;
+        -webkit-box-shadow: 0px 5px 50px 0px rgba(212, 204, 205, 0.7);
+                box-shadow: 0px 5px 50px 0px rgba(212, 204, 205, 0.7);
+        cursor: pointer; }
+        .catalog-brands .brands .brand:hover .title {
+          color: #4f9ed2;
+          display: inline-block;
+          -webkit-transition: .3s;
+          transition: .3s; }
+          .catalog-brands .brands .brand:hover .title::after {
+            width: 100%;
+            -webkit-transition: .3s;
+            transition: .3s; }
+      .catalog-brands .brands .brand .img-wr {
+        height: 70px;
+        position: relative; }
+      .catalog-brands .brands .brand img {
+        display: block;
+        margin: auto;
+        margin-bottom: 28px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .catalog-brands .brands .brand .title {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 5px;
+        position: relative;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        .catalog-brands .brands .brand .title::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          background: #4f9ed2;
+          height: 1px;
+          width: 0;
+          -webkit-transition: .3s;
+          transition: .3s; }
+      .catalog-brands .brands .brand .model {
+        font-size: 14px;
+        color: #0a2a3d; }
+      .catalog-brands .brands .brand .info {
+        position: absolute;
+        bottom: 25px; }
+  .catalog-brands .recommended h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Lato-Light'; }
+  .catalog-brands .recommended-slider .slide .slide-inner {
+    padding: 17px;
+    border: 1px solid #d4cccd; }
+  .catalog-brands .recommended-slider .slide img {
+    height: 173px;
+    width: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px; }
+  .catalog-brands .recommended-slider .slide .title {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 10px; }
+  .catalog-brands .recommended-slider .slide .rate {
+    margin-bottom: 10px; }
+    .catalog-brands .recommended-slider .slide .rate .left {
+      float: left;
+      width: 150px; }
+      .catalog-brands .recommended-slider .slide .rate .left .stars {
+        padding: 0;
+        margin: 0; }
+        .catalog-brands .recommended-slider .slide .rate .left .stars li {
+          display: inline-block;
+          vertical-align: middle;
+          height: 17px;
+          width: 17px;
+          background-image: url(../img/yellow-stars-sprite.png); }
+          .catalog-brands .recommended-slider .slide .rate .left .stars li.yellow {
+            background-position: 0 0; }
+          .catalog-brands .recommended-slider .slide .rate .left .stars li.white {
+            background-position: 17px 0; }
+          .catalog-brands .recommended-slider .slide .rate .left .stars li:last-child {
+            width: 30px;
+            background: none;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #0a2a3d; }
+    .catalog-brands .recommended-slider .slide .rate .right {
+      float: right;
+      width: 50px; }
+      .catalog-brands .recommended-slider .slide .rate .right span {
+        position: relative;
+        color: #0a2a3d;
+        font-size: 14px; }
+        .catalog-brands .recommended-slider .slide .rate .right span::before {
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-image: url(../img/dial.png);
+          margin-right: 12px;
+          display: inline-block;
+          vertical-align: middle;
+          background-repeat: no-repeat; }
+  .catalog-brands .recommended-slider .slide .range {
+    font-size: 20px;
+    color: #0a2a3d;
+    margin-bottom: 15px; }
+    .catalog-brands .recommended-slider .slide .range span {
+      font-size: 14px; }
+  .catalog-brands .recommended-slider .slide .show-all {
+    font-size: 12px;
+    color: #0a2a3d;
+    font-family: 'Lato-Bold';
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 8.5px;
+    display: block;
+    border: 1px solid #d6354d;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    text-decoration: none; }
+    .catalog-brands .recommended-slider .slide .show-all:hover {
+      color: #fff;
+      background: #d11f3a; }
+      .catalog-brands .recommended-slider .slide .show-all:hover span {
+        color: #fff;
+        -webkit-transition: .3s;
+        transition: .3s; }
+    .catalog-brands .recommended-slider .slide .show-all span {
+      color: #d11f3a;
+      -webkit-transition: .3s;
+      transition: .3s; }
+  .catalog-brands .recommended-slider {
+    position: relative;
+    border-bottom: 1px solid #eae3e4;
+    padding-bottom: 50px; }
+    .catalog-brands .recommended-slider .item {
+      height: 520px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+      .catalog-brands .recommended-slider .item:focus {
+        outline: none; }
+      .catalog-brands .recommended-slider .item .text {
+        font-weight: 100;
+        font-family: 'Lato-Light';
+        color: #333;
+        font-size: 45px;
+        margin-top: 117px;
+        line-height: 52px; }
+        .catalog-brands .recommended-slider .item .text span {
+          color: #d11f3a;
+          font-family: 'Lato-Bold';
+          font-size: 48px; }
+        .catalog-brands .recommended-slider .item .text a {
+          display: block;
+          color: #0a2a3d;
+          border: 2px solid #d11f3a;
+          width: 245px;
+          text-align: center;
+          font-size: 16px;
+          font-family: 'Lato-Bold';
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 0;
+          text-decoration: none;
+          -webkit-border-radius: 4px;
+                  border-radius: 4px;
+          margin-top: 15px; }
+          .catalog-brands .recommended-slider .item .text a:hover {
+            background: #d11f3a;
+            color: #fff; }
+    .catalog-brands .recommended-slider .next {
+      height: 40px;
+      width: 20px;
+      background-image: url(../img/right.png);
+      top: 50%;
+      position: absolute;
+      z-index: 1;
+      margin-top: -20px;
+      right: -50px;
+      cursor: pointer; }
+      .catalog-brands .recommended-slider .next:hover {
+        background-image: url(../img/left-active.png);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+    .catalog-brands .recommended-slider .prev {
+      height: 40px;
+      width: 20px;
+      background-image: url(../img/right.png);
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      top: 50%;
+      left: -50px;
+      position: absolute;
+      z-index: 2;
+      margin-top: -20px;
+      cursor: pointer; }
+      .catalog-brands .recommended-slider .prev:hover {
+        background-image: url(../img/left-active.png);
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0); }
+    .catalog-brands .recommended-slider .slick-dots {
+      text-align: center;
+      bottom: 0px;
+      position: absolute;
+      width: 100%; }
+      .catalog-brands .recommended-slider .slick-dots li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 6px; }
+        .catalog-brands .recommended-slider .slick-dots li.slick-active button {
+          background: #d11f3a; }
+        .catalog-brands .recommended-slider .slick-dots li button {
+          color: transparent;
+          border: none;
+          background: none;
+          background: #eae3e4;
+          -webkit-border-radius: 100%;
+                  border-radius: 100%;
+          height: 12px;
+          width: 8px; }

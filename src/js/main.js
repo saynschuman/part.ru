@@ -288,4 +288,19 @@
 		$('.right[data-id="' + dataQuestion + '"]').addClass('active');
 	})
 
+	// catalog-brands
+
+
+	$('#recommended-slider').slick({
+	  	cssEase: 'linear',
+	  	autoplay: true,
+	  	dots: true,
+	  	autoplaySpeed: 3000,
+	  	prevArrow: '<div class="prev"></div>',
+		nextArrow: '<div class="next"></div>',
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		margin: 16
+	})
+
 })(jQuery);
