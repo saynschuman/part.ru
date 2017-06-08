@@ -1,4 +1,83 @@
-#=include 'includes/_header.html'
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="libs/niceScroll/niceScroll.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Part.ru</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="top-header">
+                <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+                <button class="location">г. Санкт - Петербург</button>
+                <ul class="choose-cities">
+                    <li>г. Москва</li>
+                    <li>г. Киев</li>
+                    <li>г. Рига</li>
+                    <li>г. Лос-Анджелес</li>
+                </ul>
+                <nav>
+                    <ul>                                        
+                        <li class="active"><a href="">Запчасти</a></li>
+                        <li><a href="">Магазины</a></li>
+                        <li><a href="">СТО</a></li>
+                        <li><a href="">Дилеры</a></li>
+                        <li><a href="">Размещение</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="log-reg">
+                    <li><a id="login-button" href="">Вход</a></li>
+                    <li><a href="">Регистрация</a></li>
+                </ul>
+                <!-- <ul class="logged-in">
+                    <li><img src="img/ava.png" alt="user-avatar" class="ava"></li>
+                    <li>
+                        <div class="company-name">ООО Агропром</div>
+                        <div class="ocupation">Автосервис</div>
+                    </li>
+                </ul> -->
+                <ul class="logged-right-toggle">
+                    <li><a href="">Профиль</a></li>
+                    <li><a href="">Настройки</a></li>
+                    <li><a href="">Информация</a></li>
+                    <li><a href="">Выйти</a></li>
+                </ul>
+                <form action="" id="header-login-form" class="login-form">
+                    <div class="title">вход</div>
+                    <input type="text" id="email" placeholder="Введите ваш email">
+                    <input type="text" placeholder="Введите ваш пароль">
+                    <div class="remember-forgot-block clearfix">
+                        <div class="remember">
+                            <input type="checkbox" id="remember">
+                            <label for="remember"></label>
+                        </div>
+                        <a href="" class="forgot">Забыли пароль?</a>
+                    </div>
+                    <button class="" type="submit">Войти</button>
+                    <ul class="social-login">
+                        <li><a class="facebook" href=""></a></li>
+                        <li><a class="twitter" href=""></a></li>
+                        <li><a class="google" href=""></a></li>
+                        <li><a class="vk" href=""></a></li>
+                        <li><a class="mail" href=""></a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </header>
+
 
 <main>
 	<div class="container">
@@ -304,9 +383,10 @@
 				</ul>
 
 			</li>
+			
 		</ul>
 	</div>
-	<div class="detail-page catalog-brands">
+	<div class="detail-page catalog-brands catalog-items">
 		<div class="container">
 			<ul class="breadcrumbs">
 				<li><a href="">Главная</a></li>
@@ -314,338 +394,54 @@
 				<li><a href="">Бренды шин</a></li>
 				<li>Шины</li>
 			</ul>
-			<h1>Все бренды шин</h1>
-			<div class="divider"></div>
-			<div class="brands">
+			 <nav class="items-wr">
+		        <ul class="items-menu">                                        
+					<li class="active" ><a href="">Шины</a></li>
+					<li><a href="">Диски</a></li>
+					<li><a href="">Масла</a></li>
+					<li><a href="">Инструмент</a></li>
+					<li><a href="">Аккумуляторы</a></li>
+					<li><a href="">Электротовары</a></li>
+					<li><a href="">Прочее</a></li>
+		        </ul>
+		    </nav>	
+		    <h1>Шины</h1>
+			<div class="divider"></div>	
+			<div id="lond-slider" class="lond-slider">
+				<img src="img/brands/1.png" alt="">
+				<img src="img/brands/2.png" alt="">
+				<img src="img/brands/3.png" alt="">
+				<img src="img/brands/4.png" alt="">
+				<img src="img/brands/5.png" alt="">
+				<img src="img/brands/6.png" alt="">
+				<img src="img/brands/7.png" alt="">
+				<img src="img/brands/8.png" alt="">
+				<img src="img/brands/9.png" alt="">
+				<img src="img/brands/10.png" alt="">
+				<img src="img/brands/11.png" alt="">
+				<img src="img/brands/12.png" alt="">
+				<img src="img/brands/13.png" alt="">
+				<img src="img/brands/14.png" alt="">
+				<img src="img/brands/15.png" alt="">
+				<img src="img/brands/16.png" alt="">
+			</div>
+			<div class="items-main">
 				<div class="row">
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/1.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Bridgestone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/2.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Kenda</div>
-								<div class="model">284 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/3.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Nexen</div>
-								<div class="model">3354 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/4.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Kama</div>
-								<div class="model">601 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/5.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">HiFly</div>
-								<div class="model">11 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/6.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Firestone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/7.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Toyo Tires</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/8.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">ОмскШина</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/9.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Marshal</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/10.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Satoya</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/11.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Continental</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/12.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Giislaved</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/13.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">West Lake</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/14.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Goodride</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/15.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Aeolus</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/16.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Sava</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/17.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Formula</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/18.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Nokian Nordman</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/19.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">RoadStone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/20.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Landsail</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/21.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">RoadStone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/22.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Belshina</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/23.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Bridgestone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/24.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Pirelli</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/25.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Kumno Type</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/26.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Maxxis</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/27.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Cordiant</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/28.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Bridgestone</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/29.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">BFGoodrich</div>
-								<div class="model">47 моделей</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="brand">
-							<div class="img-wr">
-								<img src="img/brands/30.png" alt="">
-							</div>
-							<div class="info">
-								<div class="title">Nokian Tyres</div>
-								<div class="model">47 моделей</div>
-							</div>
+					<div class="left col-md-3"></div>
+					<div class="right col-md-9">
+						<div class="items-header">
+							<ul class="top">
+								<li>Часто ищут:</li>
+								<li><a href="">Шины RoadStone x324 Лето</a></li>
+								<li><a href="">Шины Michelin AZ394 Зима</a></li>
+							</ul>	
+							<ul class="bottom">
+								<li>Сортировать по:</li>
+								<li><a href="">цена (руб)</a></li>
+								<li><a href="">популярность</a></li>
+								<li><a href="">рейтинг</a></li>
+								<li><a href="">отзывы</a></li>
+							</ul>			
 						</div>
 					</div>
 				</div>
@@ -782,7 +578,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 	</div>
 	<div class="text-section">
 		<div class="container">
@@ -795,4 +591,158 @@
 	</div>
 </main>
 
-#=include 'includes/_footer.html'
+
+
+<!-- footer -->
+
+
+
+<footer class="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">Запчасти</a></li>
+
+					<li class="upper"><a href="">Магазины</a></li>
+
+					<li class="upper"><a href="">СТО</a></li>
+
+					<li class="upper"><a href="">Дилеры</a></li>
+
+					<li class="upper"><a href="">Размещение</a></li>
+
+					<li class="upper"><a href="">Контакты</a></li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">О ПРОЕКТЕ</a></li>
+
+					<li><a href="">Автомагазинам</a></li>
+
+					<li><a href="">Автосервисам</a></li>
+
+					<li><a href="">Страховым компаниям</a></li>
+
+					<li><a href="">Тарифы</a></li>
+
+					<li><a href="">Наши контакты</a></li>
+
+					<li><a href="">Помощь</a></li>
+
+				</ul>
+
+
+
+			</div>
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">КАТАЛОГ ТОВАРОВ</a></li>
+
+					<li><a href="">Поиск автозапчастей</a></li>
+
+					<li><a href="">Шины и диски</a></li>
+
+					<li><a href="">Масла и жидкости</a></li>
+
+					<li><a href="">Аккумуляторы</a></li>
+
+					<li><a href="">Аксессуары</a></li>
+
+					<li><a href="">Автоэлектроника</a></li>
+
+				</ul>
+
+
+
+			</div>
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">ПАРТНЕРСТВО</a></li>
+
+					<li><a href="">Поставщикам</a></li>
+
+					<li><a href="">Транспортным компаниям</a></li>
+
+					<li><a href="">Автодилерам</a></li>
+
+					<li><a href="">Франшиза в регионах</a></li>
+
+				</ul>							
+
+			</div>
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">Живая лента</a></li>
+
+					<li><a href="">Запросы пользователей</a></li>
+
+					<li><a href="">Вопросы пользователей</a></li>
+
+					<li><a href="">Последние прайс-листы</a></li>
+
+					<li><a href="">Последние отзывы</a></li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<ul>
+
+					<li class="upper"><a href="">СПРАВОЧНИКИ</a></li>
+
+					<li><a href="">Бренды и производители</a></li>
+
+					<li class="add-price"><a href="">разместить прайс</a></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="copy">© 2017 Part</div>
+
+	</div>
+
+</footer>
+
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+
+<script src="libs/niceScroll/niceScroll.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>

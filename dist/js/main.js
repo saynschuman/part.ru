@@ -303,4 +303,22 @@
 		margin: 16
 	})
 
+	$('.catalog-brands .brands .brand').click(function(){
+		location.reload();
+	})
+
+	// catalog-items
+
+	$('#lond-slider').slick({
+	  	cssEase: 'linear',
+	  	autoplay: true,
+	  	dots: true,
+	  	autoplaySpeed: 3000,
+	  	prevArrow: '<div class="prev"></div>',
+		nextArrow: '<div class="next"></div>',
+		slidesToShow: 12,
+		slidesToScroll: 6,
+		margin: 16
+	})
+
 })(jQuery);
