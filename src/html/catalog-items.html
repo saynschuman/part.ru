@@ -349,14 +349,84 @@
 			<div class="items-main">
 				<div class="row">
 					<div class="left-block clearfix col-md-3">
-						<div class="inner">
+						<form class="inner">
 							<div class="title">Цена</div>
 							<div class="costs clearfix">
-								<div class="cost-wr"><input type="text" class="cost" id="minCost" value="100"/></div>
-								<div class="cost-wr"><input type="text" class="cost" id="maxCost" value="800"/></div>
+								<div class="cost-wr"><input type="text" class="cost" id="minCost" value="120"/></div>
+								<div class="cost-wr"><input type="text" class="cost" id="maxCost" value="640"/></div>
 							</div>
 							<div id="slider"></div>
-						</div>
+							<div class="price-radio radio-block">
+								<input name="radio-cost" id="id-5000" type="radio">
+								<label for="id-5000">до 5000 р</label>
+								<input name="radio-cost" id="id-25000" type="radio">
+								<label for="id-25000">до 25000 р</label>
+								<input name="radio-cost" id="id-50000" type="radio">
+								<label for="id-50000">до 50000 р</label>
+								<input name="radio-cost" id="id-150000" type="radio">
+								<label for="id-150000">до 150000 р</label>
+								<input name="radio-cost" id="id-250000" type="radio">
+								<label for="id-250000">до 250000 р</label>
+							</div>
+							<div class="title">Производители</div>
+							<div class="production-checkboxes mCustomScrollbar" data-mcs-theme="dark">
+								<input id="Bridgestone" type="checkbox">
+								<label for="Bridgestone" data-content="Bridgestone"></label>
+								<input id="Pirelli" type="checkbox">
+								<label for="Pirelli" data-content="Pirelli"></label>
+								<input id="Michelin" type="checkbox">
+								<label for="Michelin" data-content="Michelin"></label>
+								<input id="Dunlop" type="checkbox">
+								<label for="Dunlop" data-content="Bridgestone"></label>
+								<input id="Tigar" type="checkbox">
+								<label for="Tigar" data-content="Pirelli"></label>
+								<input id="YOKOHAMA" type="checkbox">
+								<label for="YOKOHAMA" data-content="Michelin"></label>
+
+								<input id="Bridgestone-2" type="checkbox">
+								<label for="Bridgestone-2" data-content="Bridgestone"></label>
+								<input id="Pirelli-2" type="checkbox">
+								<label for="Pirelli-2" data-content="Pirelli"></label>
+								<input id="Michelin-2" type="checkbox">
+								<label for="Michelin-2" data-content="Michelin"></label>
+								<input id="Dunlop-2" type="checkbox">
+								<label for="Dunlop-2" data-content="Bridgestone"></label>
+								<input id="Tigar-2" type="checkbox">
+								<label for="Tigar-2" data-content="Pirelli"></label>
+								<input id="YOKOHAMA-2" type="checkbox">
+								<label for="YOKOHAMA-2" data-content="Michelin"></label>
+							</div>
+							<div class="title">Высота профилей</div>
+							<div class="choose-toggle">
+								<button id="toggle-left-item">От 490</button>
+								<ul id="toggle-left-item-inside" class="inside">
+									<li>От 490</li>
+									<li>От 1000</li>
+									<li>От 2000</li>
+								</ul>
+							</div>
+							<div class="title">Рейтинг</div>
+							<ul class="stars">
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li>5 звезд</li>
+							</ul>
+							<div class="rate-radio radio-block">
+								<input name="radio-rate" id="id-rate-5000" type="radio">
+								<label for="id-rate-5000">от 10 отзывов</label>
+								<input name="radio-rate" id="id-rate-25000" type="radio">
+								<label for="id-rate-25000">от 15 отзывов</label>
+								<input name="radio-rate" id="id-rate-50000" type="radio">
+								<label for="id-rate-50000">от 20 отзывов</label>
+								<input name="radio-rate" id="id-rate-150000" type="radio">
+								<label for="id-rate-150000">от 25 отзывов</label>
+								<input name="radio-rate" id="id-rate-250000" type="radio">
+								<label for="id-rate-250000">от 30 отзывов</label>
+							</div>
+						</form>
 					</div>
 					<div class="right-block clearfix col-md-9">
 						<div class="items-header">

@@ -324,7 +324,7 @@
 	$("#slider").slider({
 	    min: 0,
 	    max: 1000,
-	    values: [100,800],
+	    values: [120,640],
 	    range: true,
 	    stop: function(event, ui) {
 	        jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
@@ -336,5 +336,20 @@
 	    }
 	});
 
+	$('#toggle-left-item').click(function(){
+
+	})
+
+
+$('#toggle-left-item').click(function(e){
+	e.preventDefault();
+    	$('#toggle-left-item-inside').show();	
+    })
+    $('#toggle-left-item-inside li').click(function(){
+    	setTimeout(function(){
+		  $('#toggle-left-item-inside').hide();
+		}, 100);
+    	$('#toggle-left-item').text($(this).text());
+    })
 
 })(jQuery);
