@@ -3695,11 +3695,11 @@ nav.items-wr {
 			width: 8px;
 			background-size: 100%; 
 			background-image: url(../img/right.png); 
-			top: 60%;
+			top: 73%;
 			position: absolute;
 			z-index: 1;
 			margin-top: -25px;
-			right: -20px;
+			right: -33px;
 			cursor: pointer;
 			&:hover {
 				background-image: url(../img/left-active.png); 
@@ -3752,11 +3752,55 @@ nav.items-wr {
 }
 
 .items-main {
-	padding-bottom: 35px;
+	padding-bottom: 60px;
 	border-top: 1px solid #d4cccd;
 	.left-block {
 		border: 1px solid #d4cccd;
-		border-top: none;
+		margin-top: -1px;
+		padding-left: 15px;
+		.costs {
+			margin: 20px 0;
+		}
+		.cost-wr {
+			width: 50%;
+			float: left;
+			position: relative;
+			&::before {
+				content: 'От';
+				position: absolute;
+				top: 11px;
+				left: 9px;
+				font-size: 14px;
+				color: #9f9b9b;
+				font-family: 'Lato';
+			}
+			&:last-child {
+				float: right;
+				&::before {
+					content: 'До';
+				}
+			}
+		}
+		.cost {
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(212, 204, 205);
+			border-radius: 4px;
+			box-shadow: inset 0px 2px 5px 0px rgba(0, 1, 2, 0.25);
+			width: 86px;
+			height: 38px;
+			padding: 9px;
+			padding-left: 30px;
+			font-size: 14px;
+			color: #0a2a3d;
+		}
+		.inner {
+			padding: 22px;
+		}
+		.title {
+			color: #29303d;
+			font-size: 20px;
+		}
 	}
 	.right-block {
 		.items-header {
@@ -3810,8 +3854,8 @@ nav.items-wr {
 					position: absolute;
 					background: #f4f1f1;
 					height: calc(100% + 2px);
-					width: 16px;
-					left: -16px;
+					width: 8px;
+					left: -8px;
 					top: -1px;
 					border-top: 1px solid #d4cccd;
 					border-bottom: 1px solid #d4cccd;
@@ -3957,7 +4001,10 @@ nav.items-wr {
 }
 
 .catalog-items-pagination {
-	position: relative;
+	position: absolute;
+	height: 20px;
+    bottom: -30px;
+    width: 100%;
 	.links {
 		padding: 0;
 		margin: 0;
@@ -4017,4 +4064,40 @@ nav.items-wr {
 			}
 		}
 	}
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br,
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl,
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr,
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	border-radius: 10px !important;
+}
+
+.ui-slider .ui-slider-range {
+	background-image: url(../img/slider-body.png); 
+	background-repeat-x: repeat; 
+	background-repeat-y: no-repeat;
+}
+
+.ui-slider-horizontal {
+	height: 8px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.4em;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+    border: 5px solid #d11f3a;
+    background: #ededed;
+    font-weight: normal;
+    color: #2b2b2b;
+    cursor: pointer;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 5px solid #d11f3a;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="libs/niceScroll/niceScroll.css">
+    <link rel="stylesheet" href="libs/css/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Part.ru</title>
@@ -427,8 +428,17 @@
 			</div>
 			<div class="items-main">
 				<div class="row">
-					<div class="left-block col-md-3"></div>
-					<div class="right-block col-md-9">
+					<div class="left-block clearfix col-md-3">
+						<div class="inner">
+							<div class="title">Цена</div>
+							<div class="costs clearfix">
+								<div class="cost-wr"><input type="text" class="cost" id="minCost" value="100"/></div>
+								<div class="cost-wr"><input type="text" class="cost" id="maxCost" value="800"/></div>
+							</div>
+							<div id="slider"></div>
+						</div>
+					</div>
+					<div class="right-block clearfix col-md-9">
 						<div class="items-header">
 							<ul class="top">
 								<li>Часто ищут:</li>
@@ -946,6 +956,8 @@
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 
 <script src="libs/niceScroll/niceScroll.js"></script>
+
+<script src="libs/js/jquery-ui.min.js"></script> 
 
 <script src="js/main.js"></script>
 
