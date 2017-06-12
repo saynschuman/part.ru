@@ -357,4 +357,6 @@ $('#editable-rate li').click(function(){
 	$('#qu-st').text($('#editable-rate .yellow').length);
 })
 
+// contacts-page 
+
 })(jQuery);

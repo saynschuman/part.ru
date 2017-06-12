@@ -9602,3 +9602,35 @@ input:checked + label .rub {
 
 .c-news {
   padding-bottom: 20px; }
+
+.contacts-page {
+  height: auto;
+  width: 100%;
+  background-image: url(../img/detail-divider-background.png);
+  background-position: top center;
+  background-repeat-y: no-repeat;
+  background-repeat-x: repeat;
+  padding-top: 20px; }
+  .contacts-page h1 {
+    margin-bottom: 0; }
+  .contacts-page .divider {
+    margin: 10px 0 20px; }
+  .contacts-page .contact-block {
+    padding: 25px 23px;
+    border: 1px solid #d4cccd;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    margin-bottom: 16px; }
+    .contacts-page .contact-block table tr td {
+      padding: 4px 0; }
+      .contacts-page .contact-block table tr td:first-child {
+        color: #9f9b9b;
+        font-size: 11px;
+        width: 90px; }
+      .contacts-page .contact-block table tr td:last-child {
+        color: #0a2a3d;
+        font-size: 14px; }
+
+#contacts-map {
+  height: 545px;
+  width: 100%; }

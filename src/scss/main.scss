@@ -4364,3 +4364,50 @@ input {
 .c-news {
 	padding-bottom: 20px;
 }
+
+.gradient-background {
+
+}
+
+.contacts-page {
+	height: auto;
+    width: 100%;
+    background-image: url(../img/detail-divider-background.png);
+    background-position: top center;
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
+    padding-top: 20px;
+    h1 {
+    	margin-bottom: 0;
+    }
+    .divider {
+    	margin: 10px 0 20px;
+    }
+    .contact-block {
+    	padding: 25px 23px;
+    	border: 1px solid #d4cccd;
+    	border-radius: 3px;
+    	margin-bottom: 16px;
+		table {
+			tr {
+				td {
+					padding: 4px 0;
+					&:first-child {
+						color: #9f9b9b;
+						font-size: 11px;
+						width: 90px;
+					}
+					&:last-child {
+				    	color: #0a2a3d;
+				    	font-size: 14px;
+					}
+				}
+			}
+		}
+    }
+}
+
+#contacts-map {
+	height: 545px;
+	width: 100%;
+}
