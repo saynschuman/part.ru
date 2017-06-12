@@ -311,9 +311,8 @@
 
 	$('#lond-slider').slick({
 	  	cssEase: 'linear',
-	  	autoplay: true,
-	  	dots: true,
-	  	autoplaySpeed: 3000,
+	  	autoplay: false,
+	  	dots: false,
 	  	prevArrow: '<div class="prev"></div>',
 		nextArrow: '<div class="next"></div>',
 		slidesToShow: 12,
@@ -345,11 +344,17 @@ $('#toggle-left-item').click(function(e){
 	e.preventDefault();
     	$('#toggle-left-item-inside').show();	
     })
-    $('#toggle-left-item-inside li').click(function(){
-    	setTimeout(function(){
-		  $('#toggle-left-item-inside').hide();
-		}, 100);
-    	$('#toggle-left-item').text($(this).text());
-    })
+$('#toggle-left-item-inside li').click(function(){
+	setTimeout(function(){
+	  $('#toggle-left-item-inside').hide();
+	}, 100);
+	$('#toggle-left-item').text($(this).text());
+})
+
+$('#editable-rate li').click(function(){
+	$(this).toggleClass('yellow');
+	$(this).toggleClass('white');
+	$('#qu-st').text($('#editable-rate .yellow').length);
+})
 
 })(jQuery);
