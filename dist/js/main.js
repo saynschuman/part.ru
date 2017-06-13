@@ -609,6 +609,10 @@ $('#editable-rate li').click(function(){
 	 	icon: marker_url,
 	});
 
+	// marker.addListener('click', function() {
+	    
+ //  	});
+
 	//Добавляем свои иконки для кнопок увеличить/уменьшить на карту
 	// function CustomZoomControl(controlDiv, map) { 
 	//   	var controlUIzoomIn= document.getElementById('zoom-in'),
