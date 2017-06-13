@@ -7449,7 +7449,8 @@ footer.footer {
         .autocomplete-block .autocomplete-body .autocomplete-line li:last-child {
           color: #0a2a3d;
           font-family: 'Lato-Bold';
-          float: right; }
+          float: right;
+          margin-right: 10px; }
           .autocomplete-block .autocomplete-body .autocomplete-line li:last-child::after {
             content: "\f105";
             color: #e3ddde;
@@ -9633,4 +9634,5 @@ input:checked + label .rub {
 
 #contacts-map {
   height: 545px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }

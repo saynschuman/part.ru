@@ -1738,6 +1738,7 @@ footer.footer {
 					color: #0a2a3d;
 					font-family: 'Lato-Bold';
 					float: right;
+					margin-right: 10px;
 					&::after {
 						content: "\f105";
 						color: #e3ddde;
@@ -4410,4 +4411,5 @@ input {
 #contacts-map {
 	height: 545px;
 	width: 100%;
+	margin-bottom: 20px;
 }

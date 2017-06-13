@@ -516,56 +516,6 @@
 	<div class="map-block">
 		<div class="container">
 			<div id="contacts-map"></div>
-
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
- <script>
- var latlng = new google.maps.LatLng("55.77186", "37.59343799999999");
- var myOptions = {
- zoom: 17,
- center: latlng,
- navigationControlOptions: {
- style: google.maps.NavigationControlStyle.SMALL
- },
- mapTypeId: google.maps.MapTypeId.ROADMAP
- 
- };
- var map = new google.maps.Map(document.getElementById("contacts-map"),myOptions);
- map.scrollwheel=true;
- map.setOptions({ mapTypeControl:true});
- 
-
-var locations = [
-	{
-		title: 'Legalizuem.ru Head Office',
-		position: {lat: 55.77186, lng: 37.593437999999999},
-		icon: {
-			url: "../img/map-marker.png",
-			scaledSize: new google.maps.Size(42, 55)
-		}
-
-	},
-	{
-		title: 'Legalizuem.ru  Second Office',
-		position: {lat: 48.85484, lng: 2.366427},
-		icon: {
-			url: "../img/map-marker.png",
-			scaledSize: new google.maps.Size(42, 55)
-		}
-	}					
-];
-
-locations.forEach( function( element ) {
-	var marker = new google.maps.Marker({
-			position: element.position,
-			map: map,
-			title: element.title,
-			icon: element.icon,
-		});
-	});	
-
-
- </script>
-
 		</div>
 	</div>
 	
@@ -579,6 +529,9 @@ locations.forEach( function( element ) {
 		</div>
 	</div>
 </main>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZmYPtNm2J_yZ_2dHAgsmQ6TjxUCQkvBU"></script>
+<script src="libs/map/contacts-map.js"></script>
 
 <!-- footer -->
 
