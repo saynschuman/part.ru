@@ -368,9 +368,9 @@ $('#editable-rate li').click(function(){
 		map_zoom = 8;
 
 	//Адрес до иконки с маркером
-	var marker_url_177 = '../img/pin-177.png';
-	var marker_url_85 = '../img/pin-85.png';
-	var marker_url_186 = '../img/pin-186.png';
+	var marker_url_177 = 'img/pin-177.png';
+	var marker_url_85 = 'img/pin-85.png';
+	var marker_url_186 = 'img/pin-186.png';
 		
 	
 	var	main_color = '#cbe6a3', //основной цвет
