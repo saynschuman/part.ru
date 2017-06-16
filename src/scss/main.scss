@@ -4418,9 +4418,13 @@ input {
 }
 
 .map-page {
+	height: 1230px;
+	overflow: hidden;
 	.left {
 		width: 400px;
 		float: left;
+		position: relative;
+		overflow: hidden;
 		.left-header {
 			padding: 20px;
 			padding-bottom: 0;
@@ -4481,7 +4485,7 @@ input {
 					display: inline-block;
 					vertical-align: middle;
 					margin-left: 7px;
-					margin-top: 3px;
+					margin-top: 2.5px;
 				}
 			}
 		}
@@ -4848,4 +4852,185 @@ input {
 			}
 		}
 	}	
+}
+
+.filter-map {
+	position: relative;
+	background: #fff;
+	z-index: 99;
+	margin-top: -0px !important;
+	padding-top: 0;
+	display: none;
+	.in-form {
+		padding: 16px 23px;
+	}
+	.stars {
+		padding: 0;
+		margin: 10px 0;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			height: 17px;
+			width: 17px;
+			background-image: url(../img/yellow-stars-sprite.png);
+			&.yellow {
+				background-position: 0 0; 
+			}
+			&.white {
+				background-position: 17px 0;
+			}
+			&:last-child {
+				width: 51px;
+				background: none;
+				margin-left: 0;
+				float: right;
+				font-size: 14px;
+				color: #0a2a3d;
+				margin-top: 2px;
+			}
+		}
+	}
+	.choose-toggle {
+		.inside {
+			padding: 0px 0 10px;
+			margin: 0;
+			position: absolute;
+			background: #fff;
+			width: calc(100% - 46px);
+			margin-top: -17px;
+			border: 1px solid #ccc;
+			border-top: none;
+			display: none;
+			z-index: 999;
+			li {
+				margin: 0;
+				padding: 5px 0;
+				list-style: none;
+				padding-left: 10px;
+				cursor: pointer;
+				&:hover {
+					background: rgba(200,200,200,.1);
+				}
+			}
+		}
+		button {
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(212, 204, 205);
+			border-radius: 4px;
+			background-color: rgb(255, 255, 255);
+			box-shadow: inset 0px 2px 5px 0px rgba(0, 1, 2, 0.25);
+			height: 38px;
+			width: 100%;
+			text-align: left;
+			padding-left: 8px;
+			margin: 17px 0;
+			position: relative;
+			margin-bottom: 25px;
+			&::after {
+				content: '';
+				position: absolute;
+				border: 5px solid transparent;	
+				border-top: 5px solid #d4cccd;
+				right: 8px;
+				top: 58%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.radio-block {
+		margin: 20px 0;
+		&.by-opt {
+			label {
+				width: 17px;
+				height: 17px;
+				background: url(../img/inp-rad.png);
+				border: 1px solid transparent;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 100%;
+				margin-right: 50px;
+				&:after {
+						position: relative;
+						margin-left: 17px;
+						content: attr(data-label);
+						color: #000;
+						font-size: 14px;
+						font-family: 'Lato';
+						font-weight: 300;
+						display: inline-block;
+						vertical-align: middle;
+						top: -4px;
+					}
+			}
+			input {
+				&:checked + label {
+					border-radius: 100%;
+					border: 1px solid #d11f3a;
+					position: relative;
+					color: #201f21;
+					&::before {
+						content: '';
+						height: 8.5px;
+						width: 8.5px;
+						position: absolute;
+						background: #d11f3a;
+						border-radius: 100%;
+						top: 3px;
+						left: 3px;
+					}
+					&::after {
+						color: #d11f3a;
+					}
+				}
+			}
+		}
+		input {
+			display: none;
+			&:checked + label {
+				background-color: #d11f3a;
+				border: 1px solid #d11f3a;
+				color: #fff;
+				.rub{
+	    			border-bottom: 1px solid #fff;
+				}
+			}
+		}
+		label {
+			width: 104px;
+			padding: 4px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			text-align: center;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-right: 11px;
+			cursor: pointer;
+			font-size: 11px;
+			color: #201f21;
+			font-family: 'Lato-Bold';
+		}
+	}
+	.allow {
+		color: #0a2a3d;
+		text-align: center;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: 'Lato-Bold';
+		border: 1px solid #d5354d;
+		border-radius: 5px;
+		padding: 10px;
+		transition: .3s;
+		cursor: pointer;
+		&:hover {
+			background: #d5354d;
+			color: #fff;
+			transition: .3s;
+		}
+	}	
+	.title-text {
+		color: #29303d;
+		font-size: 20px;
+
+	}
 }

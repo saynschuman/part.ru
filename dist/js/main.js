@@ -632,6 +632,7 @@ $('#editable-rate li').click(function(){
 
   	$('#show-filter').click(function(){
   		$(this).toggleClass('active');
+  		$('#filter-map').slideToggle();
   	})
 
 })(jQuery);

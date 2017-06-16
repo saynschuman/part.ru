@@ -321,11 +321,59 @@
 			</div>
 			<div class="filter">
 				<div id="show-filter" class="title"><span>Использовать Фильтр</span></div>
+				
+				<!-- filter -->
+				<div class="left-block clearfix filter filter-map" id="filter-map">
+					<form class="inner">
+						<div class="in-form">
+							<div class="title-text">Рейтинг</div>
+							<ul id="editable-rate" class="stars">
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li class="yellow"></li>
+								<li><span id="qu-st">5</span> звезд</li>
+							</ul>
+							<div class="price-radio radio-block">
+								<input name="radio-cost" id="id-5000" type="radio">
+								<label for="id-5000">до 5000 <span class="rub">р</span></label>
+								<input name="radio-cost" id="id-25000" type="radio">
+								<label for="id-25000">до 25000 <span class="rub">р</span></label>
+								<input name="radio-cost" id="id-50000" type="radio">
+								<label for="id-50000">до 50000 <span class="rub">р</span></label>
+								<input name="radio-cost" id="id-150000" type="radio">
+								<label for="id-150000">до 150000 <span class="rub">р</span></label>
+								<input name="radio-cost" id="id-250000" type="radio">
+								<label for="id-250000">до 250000 <span class="rub">р</span></label>
+							</div>
+							
+							<div class="title-text">Специализация</div>
+							<div class="choose-toggle">
+								<button id="toggle-left-item">Легковые</button>
+								<ul id="toggle-left-item-inside" class="inside">
+									<li>Легковые</li>
+									<li>Грузовые</li>
+								</ul>
+							</div>
+							<div class="title-text">Условия</div>
+							<div class="rate-radio radio-block by-opt">
+								<input name="radio-rate" id="id-rate-5000" type="radio">
+								<label data-label="Все" for="id-rate-5000"></label>
+								<input name="radio-rate" id="id-rate-25000" type="radio">
+								<label data-label="Опт" for="id-rate-25000"></label>
+								<input name="radio-rate" id="id-rate-50000" type="radio">
+								<label data-label="Розница" for="id-rate-50000"></label>
+							</div>
+							<div class="allow">Применить фильтр</div>
+						</div>
+					</form>
+				</div>	
 				<ul class="sort">
 					<li><a href="">популярность</a></li>
 					<li><a href="">рейтинг</a></li>
 					<li><a href="">отзывы</a></li>
-				</ul>
+				</ul>	
 				<div class="companies">
 					<div class="company">
 						<div class="company-header clearfix">
