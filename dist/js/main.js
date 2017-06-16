@@ -358,6 +358,7 @@ $('#editable-rate li').click(function(){
 })
 
 
+// map
 
 // contacts-page (map)
 
@@ -367,7 +368,9 @@ $('#editable-rate li').click(function(){
 		map_zoom = 8;
 
 	//Адрес до иконки с маркером
-	var marker_url = '../img/map-marker.png';
+	var marker_url_177 = '../img/pin-177.png';
+	var marker_url_85 = '../img/pin-85.png';
+	var marker_url_186 = '../img/pin-186.png';
 		
 	
 	var	main_color = '#cbe6a3', //основной цвет
@@ -571,71 +574,64 @@ $('#editable-rate li').click(function(){
     }
 
     //Инициализация карты
-	var map = new google.maps.Map(document.getElementById('contacts-map'), map_options);
+	var map = new google.maps.Map(document.getElementById('map-page'), map_options);
 
 	//Добавляем свой маркер местонахождения на карту (свою иконку)			
 	var marker = new google.maps.Marker({
 	  	position: new google.maps.LatLng(latitude, longitude),
 	    map: map,
 	    visible: true,
-	 	icon: marker_url,
+	 	icon: marker_url_177,
 	});
 
 	var marker_2 = new google.maps.Marker({
 	  	position: new google.maps.LatLng(56.254337, 40.410045),
 	    map: map,
 	    visible: true,
-	 	icon: marker_url,
+	 	icon: marker_url_85,
 	});
 
 	var marker_3 = new google.maps.Marker({
 	  	position: new google.maps.LatLng(56.354337, 36.210045),
 	    map: map,
 	    visible: true,
-	 	icon: marker_url,
+	 	icon: marker_url_186,
 	});
 
 	var marker_4 = new google.maps.Marker({
 	  	position: new google.maps.LatLng(55.300037, 36.210045),
 	    map: map,
 	    visible: true,
-	 	icon: marker_url,
+	 	icon: marker_url_177,
 	});
 
 	var marker_5 = new google.maps.Marker({
 	  	position: new google.maps.LatLng(55.300037, 39.810045),
 	    map: map,
 	    visible: true,
-	 	icon: marker_url,
+	 	icon: marker_url_85,
 	});
 
-	// marker.addListener('click', function() {
-	    
- //  	});
-
-	//Добавляем свои иконки для кнопок увеличить/уменьшить на карту
-	// function CustomZoomControl(controlDiv, map) { 
-	//   	var controlUIzoomIn= document.getElementById('zoom-in'),
-	//   		controlUIzoomOut= document.getElementById('zoom-out');
-	//   	controlDiv.appendChild(controlUIzoomIn);
-	//   	controlDiv.appendChild(controlUIzoomOut);
-
-	// 	//Делаем привязку для кнопок увеличить/уменьшить при клике
-	// 	google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
-	// 	    map.setZoom(map.getZoom()+1)
-	// 	});
-	// 	google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
-	// 	    map.setZoom(map.getZoom()-1)
-	// 	});
-	// }
-
-	// var zoomControlDiv = document.createElement('div');
- // 	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
-
- //  	//Помещаем кнопки увеличить/уменьшить на карту в левый верхний угол
- //  	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 
 
+	marker.addListener('click', function(e) {
+	    $('.inner-block').show();
+  	});
+  	marker_2.addListener('click', function(e) {
+	    $('.inner-block').show();
+  	});
+  	marker_3.addListener('click', function(e) {
+	    $('.inner-block').show();
+  	});
+  	marker_4.addListener('click', function(e) {
+	    $('.inner-block').show();
+  	});
+  	marker_5.addListener('click', function(e) {
+	    $('.inner-block').show();
+  	});
 
+  	$('#show-filter').click(function(){
+  		$(this).toggleClass('active');
+  	})
 
 })(jQuery);
